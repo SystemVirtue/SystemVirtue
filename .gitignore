@@ -1,0 +1,12 @@
+# local UI/platform artifacts — never part of the shipped repo
+.DS_Store
+**/.DS_Store
+.freebuff/preview-*.log
+
+# runtime / derived data under the MVP
+22_MVP/var/
+22_MVP/validation/out/
+
+# OS backups
+Thumbs.db
+*.original

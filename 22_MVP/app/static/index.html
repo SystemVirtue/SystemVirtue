@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SystemVirtue MVP — AI Capability Explorer</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231e40af'/%3E%3Ctext x='16' y='21' font-family='Georgia,serif' font-size='14' fill='white' text-anchor='middle'%3ESV%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header role="banner">
+    <h1>SystemVirtue <span class="subtitle">AI capability explorer</span></h1>
+    <p class="tagline">Explore the AI capability ecosystem. Every claim carries its evidence.</p>
+
+    <div class="task-bar" aria-label="Study task controls">
+      <label for="task-select">Active task</label>
+      <select id="task-select">
+        <option value="">(no task)</option>
+        <option value="T1">T1 Find a capability</option>
+        <option value="T2">T2 Discover an unknown capability</option>
+        <option value="T3">T3 Compare alternatives</option>
+        <option value="T4">T4 Understand a relationship</option>
+        <option value="T5">T5 Determine availability</option>
+        <option value="T6">T6 Return to earlier exploration</option>
+        <option value="T7">T7 Explain a recommendation</option>
+        <option value="T8">T8 Identify uncertainty</option>
+        <option value="T9">T9 Without visualisation</option>
+        <option value="T10">T10 With accessibility features</option>
+      </select>
+      <button type="button" id="btn-complete-yes">Task completed</button>
+      <button type="button" id="btn-complete-no">Could not complete</button>
+    </div>
+
+    <nav aria-label="Views">
+      <ul class="nav-list">
+        <li><button type="button" data-view="search" class="nav-btn">Search &amp; browse</button></li>
+        <li><button type="button" data-view="explore" class="nav-btn">Natural-language explore</button></li>
+        <li><button type="button" data-view="map" class="nav-btn">Ecosystem map</button></li>
+        <li><button type="button" data-view="changes" class="nav-btn">Changes &amp; freshness</button></li>
+        <li><button type="button" data-view="compare" class="nav-btn">Compare</button></li>
+        <li><button type="button" data-view="saved" class="nav-btn">Saved &amp; history</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section id="view-search" aria-labelledby="h-search">
+      <h2 id="h-search">Search and browse the capability ecosystem</h2>
+      <p class="meta">Find entities by name, description or alias and filter by type. New here?
+        The <button type="button" data-view="map" class="nav-btn hint-btn">Ecosystem map</button> shows the whole picture.</p>
+      <form id="search-form" role="search">
+        <div class="field">
+          <label for="search-q">Search terms</label>
+          <input type="search" id="search-q" name="q" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="search-type">Entity type</label>
+          <select id="search-type" name="type">
+            <option value="">All types</option>
+            <option value="mcp_server">MCP server</option>
+            <option value="tool">Tool</option>
+            <option value="capability">Capability</option>
+            <option value="agent">Agent</option>
+            <option value="model">Model</option>
+            <option value="provider">Provider</option>
+            <option value="organisation">Organisation</option>
+            <option value="task">Task</option>
+            <option value="integration">Integration</option>
+            <option value="licence">Licence</option>
+          </select>
+        </div>
+        <button type="submit">Search</button>
+      </form>
+      <div id="search-results" class="results" role="region" aria-live="polite" aria-label="Search results"></div>
+    </section>
+
+    <section id="view-entity" aria-labelledby="h-entity" hidden>
+      <button type="button" id="btn-back">Back to results</button>
+      <h2 id="h-entity">Entity</h2>
+      <div id="entity-body"></div>
+    </section>
+
+    <section id="view-explore" aria-labelledby="h-explore" hidden>
+      <h2 id="h-explore">Natural-language exploration</h2>
+      <p class="hint">Answers are retrieved from verified claims and always cite their sources.</p>
+      <form id="explore-form">
+        <div class="field">
+          <label for="explore-q">Your question</label>
+          <input type="text" id="explore-q" autocomplete="off"
+                 placeholder="e.g. What can the GitHub MCP Server do?">
+        </div>
+        <button type="submit">Ask</button>
+      </form>
+      <div id="explore-results" class="results" role="region" aria-live="polite" aria-label="Exploration answer"></div>
+    </section>
+
+    <!-- Ecosystem map: semantic-zoom studio -->
+    <section id="view-map" aria-labelledby="h-map" hidden>
+      <h2 id="h-map">Ecosystem map</h2>
+      <p class="hint">A semantic-zoom map of the knowledge base. Clusters open into entities; entities open in the inspector. The tiles and tables are the authoritative interface.</p>
+      <div class="map-studio">
+        <aside class="map-panel bezel" aria-label="Map search and layers">
+          <div class="bezel-core">
+            <form id="map-search-form" role="search">
+              <div class="field">
+                <label for="map-q">Search the map</label>
+                <input type="search" id="map-q" autocomplete="off">
+              </div>
+              <button type="submit">Apply</button>
+            </form>
+            <div class="field">
+              <label for="map-footprint">Show</label>
+              <select id="map-footprint">
+                <option value="all">Everything</option>
+                <option value="mine">My footprint only</option>
+                <option value="uncharted">Uncharted only</option>
+              </select>
+            </div>
+            <fieldset class="layer-set">
+              <legend>Layers</legend>
+              <label><input type="checkbox" id="layer-markers" checked> Footprint markers</label>
+              <label><input type="checkbox" id="layer-changes" checked> Recent-change markers</label>
+              <label><input type="checkbox" id="layer-verification" checked> Verification badges</label>
+            </fieldset>
+            <div class="field">
+              <span class="field-label" id="map-preview-label">Quick look</span>
+              <div id="map-preview" class="preview-card"></div>
+            </div>
+          </div>
+        </aside>
+        <div class="map-canvas-zone">
+          <nav id="map-crumbs" aria-label="Semantic breadcrumbs">
+            <ol class="crumbs" id="map-crumbs-list"></ol>
+          </nav>
+          <div id="map-canvas" class="map-canvas bezel">
+            <div class="bezel-core" id="map-canvas-core"></div>
+          </div>
+        </div>
+        <aside id="map-inspector" class="map-inspector bezel" aria-label="Contextual inspector">
+          <div class="bezel-core" id="map-inspector-core">
+            <p class="hint">Select a cluster or an entity to inspect it here without leaving the map.</p>
+          </div>
+        </aside>
+      </div>
+      <div id="map-text" class="results"></div>
+    </section>
+
+    <!-- Changes and freshness -->
+    <section id="view-changes" aria-labelledby="h-changes" hidden>
+      <h2 id="h-changes">Changes and freshness</h2>
+      <p class="hint">Detected ecosystem changes (from registry sync and revisions) and the
+        current freshness/verification distribution of all claims.</p>
+      <div id="changes-body" class="results" role="region" aria-live="polite" aria-label="Changes and freshness"></div>
+    </section>
+
+    <!-- Comparison -->
+    <section id="view-compare" aria-labelledby="h-compare" hidden>
+      <h2 id="h-compare">Compare entities</h2>
+      <p class="hint">Add up to three entities by identifier (e.g. <code>mcp-server/github</code>), or use the
+        “Add to compare” buttons on entity pages.</p>
+      <form id="compare-form">
+        <div class="field">
+          <label for="compare-id">Entity identifier</label>
+          <input type="text" id="compare-id" autocomplete="off">
+        </div>
+        <button type="submit">Add</button>
+      </form>
+      <p id="compare-status" class="status-line" role="status"></p>
+      <div id="compare-results" class="results" role="region" aria-live="polite" aria-label="Comparison table"></div>
+    </section>
+
+    <!-- Saved entities and exploration history -->
+    <section id="view-saved" aria-labelledby="h-saved" hidden>
+      <h2 id="h-saved">Saved entities and exploration history</h2>
+      <p class="hint">This personal state is stored in your browser only and never sent to the server.</p>
+      <div id="saved-body" class="results" role="region" aria-live="polite" aria-label="Saved entities"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>SystemVirtue MVP, a knowledge layer prototype. Every claim shown carries provenance.
+      Every visual view has an authoritative text equivalent.</p>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

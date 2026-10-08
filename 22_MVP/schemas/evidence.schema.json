@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Evidence",
+  "description": "An immutable evidence reference. Ten pages repeating one source remain one source: derived_from chains expose copying (VERIFICATION_PIPELINE.md).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["evidence_id", "source", "source_type", "source_root", "title", "retrieved_at", "content_hash", "excerpt"],
+  "properties": {
+    "evidence_id": { "type": "string", "pattern": "^ev-[a-z0-9][a-z0-9-]*$" },
+    "source": { "type": "string", "minLength": 1 },
+    "source_type": {
+      "type": "string",
+      "enum": ["spec", "official-docs", "official-repo", "registry", "third-party", "user-report"]
+    },
+    "source_root": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "retrieved_at": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}" },
+    "content_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "derived_from": { "type": ["string", "null"], "pattern": "^ev-[a-z0-9][a-z0-9-]*$" },
+    "excerpt": { "type": "string", "minLength": 1, "description": "The curated excerpt the content_hash is computed over." }
+  }
+}

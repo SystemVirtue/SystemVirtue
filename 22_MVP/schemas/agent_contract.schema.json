@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AgentContract",
+  "description": "The complete contract every agent task must specify (SYSTEM_REQUIREMENTS.md section 8). Agents are replaceable: authority lives here, not in agent code (invariant 6).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "task_id",
+    "role",
+    "objective",
+    "inputs",
+    "allowed_tools",
+    "allowed_sources",
+    "permissions",
+    "risk_class",
+    "deadline",
+    "required_evidence",
+    "verification_policy",
+    "output_schema",
+    "fallback",
+    "rollback"
+  ],
+  "properties": {
+    "task_id": { "type": "string", "pattern": "^task-[a-z0-9][a-z0-9-]*$" },
+    "role": {
+      "type": "string",
+      "enum": ["research", "verification", "entity", "coding", "ux", "security", "governance"]
+    },
+    "objective": { "type": "string", "minLength": 1 },
+    "inputs": { "type": "array", "items": { "type": "string" } },
+    "allowed_tools": { "type": "array", "items": { "type": "string" } },
+    "allowed_sources": { "type": "array", "items": { "type": "string" } },
+    "permissions": { "type": "array", "items": { "type": "string" } },
+    "risk_class": { "type": "string", "enum": ["low", "medium", "high"] },
+    "deadline": { "type": ["string", "null"] },
+    "required_evidence": { "type": "string", "minLength": 1 },
+    "verification_policy": {
+      "type": "string",
+      "enum": ["auto-accept-low-risk", "always-escalate-high-risk", "human-approval-required"]
+    },
+    "output_schema": { "type": "string", "minLength": 1 },
+    "fallback": { "type": "string", "minLength": 1 },
+    "rollback": { "type": "string", "minLength": 1 }
+  }
+}

@@ -1,0 +1,4789 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-10-09",
+  "curator": "manual curation over official sources (see evidence excerpts)",
+  "evidence": [
+    {
+      "evidence_id": "ev-mcp-spec",
+      "source": "https://modelcontextprotocol.io/specification/2025-06-18",
+      "source_type": "spec",
+      "source_root": "modelcontextprotocol.io",
+      "title": "MCP specification (2025-06-18)",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:1eb1318c16447f9d7dadfe0cc91278fcf6eb6a87234deb014b25b44fc97c4e97",
+      "derived_from": null,
+      "excerpt": "Model Context Protocol (MCP) is an open protocol that enables seamless integration between LLM applications and external data sources and tools."
+    },
+    {
+      "evidence_id": "ev-mcp-arch",
+      "source": "https://modelcontextprotocol.io/specification/2025-06-18/architecture",
+      "source_type": "spec",
+      "source_root": "modelcontextprotocol.io",
+      "title": "MCP architecture",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:40aaa53dd73043ad6c83780102750485c078221cf3170eac8d88a4807a745dfe",
+      "derived_from": null,
+      "excerpt": "The Model Context Protocol (MCP) follows a client-host-server architecture where each host can run multiple client instances."
+    },
+    {
+      "evidence_id": "ev-mcp-auth",
+      "source": "https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization",
+      "source_type": "spec",
+      "source_root": "modelcontextprotocol.io",
+      "title": "MCP authorization",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:9ccee3f12a7994401954a4df32d55803190700c503f463e6e3d6bffea4a10009",
+      "derived_from": null,
+      "excerpt": "The Model Context Protocol provides authorization capabilities at the transport level, enabling MCP clients to make requests to restricted MCP servers."
+    },
+    {
+      "evidence_id": "ev-mcp-lifecycle",
+      "source": "https://modelcontextprotocol.io/specification/2025-06-18/basic/lifecycle",
+      "source_type": "spec",
+      "source_root": "modelcontextprotocol.io",
+      "title": "MCP lifecycle",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:71969637a64fd32c08d5e37e262260caef1631a4eb81bdd426dc4c19691b3a88",
+      "derived_from": null,
+      "excerpt": "The MCP specification defines a client-server lifecycle covering initialization, operation and shutdown."
+    },
+    {
+      "evidence_id": "ev-mcp-tools",
+      "source": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
+      "source_type": "spec",
+      "source_root": "modelcontextprotocol.io",
+      "title": "MCP server tools",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:1e47d447cfc7edc1dd166b267128e41aff1ab75827ebc7ca94d78092582337f0",
+      "derived_from": null,
+      "excerpt": "MCP servers can provide tools that can be invoked by the client."
+    },
+    {
+      "evidence_id": "ev-mcp-resources",
+      "source": "https://modelcontextprotocol.io/specification/2025-06-18/server/resources",
+      "source_type": "spec",
+      "source_root": "modelcontextprotocol.io",
+      "title": "MCP server resources",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:e60debf88697226304b931ced16bad00a632589539816ba93e0c4fbf3e07eb51",
+      "derived_from": null,
+      "excerpt": "MCP servers can expose resources to clients."
+    },
+    {
+      "evidence_id": "ev-mcp-prompts",
+      "source": "https://modelcontextprotocol.io/specification/2025-06-18/server/prompts",
+      "source_type": "spec",
+      "source_root": "modelcontextprotocol.io",
+      "title": "MCP server prompts",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:79127c3504414e7fe09380d6302717ee980c6f1f12ad236ca8e182881398a71d",
+      "derived_from": null,
+      "excerpt": "MCP servers can expose prompt templates to clients."
+    },
+    {
+      "evidence_id": "ev-mcp-registry",
+      "source": "https://registry.modelcontextprotocol.io/",
+      "source_type": "registry",
+      "source_root": "registry.modelcontextprotocol.io",
+      "title": "Official MCP Registry",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:60ffdea73a342169c9a03e60866b56c9a82e8a7e6f6dcbb4e116e6da245323b6",
+      "derived_from": null,
+      "excerpt": "The Official MCP Registry: discover Model Context Protocol servers."
+    },
+    {
+      "evidence_id": "ev-mcp-registry-about",
+      "source": "https://modelcontextprotocol.io/registry/about",
+      "source_type": "registry",
+      "source_root": "modelcontextprotocol.io",
+      "title": "About the MCP Registry",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:c22e226433294fdac6d879936bd96f9301c56f5c57eef9d50d3a2a575ceab7c2",
+      "derived_from": null,
+      "excerpt": "The MCP Registry is the official centralized metadata repository for publicly accessible MCP servers, backed by major trusted contributors to the MCP ecosystem."
+    },
+    {
+      "evidence_id": "ev-mcp-registry-blog",
+      "source": "https://blog.modelcontextprotocol.io/posts/2025-09-08-mcp-registry-preview/",
+      "source_type": "registry",
+      "source_root": "modelcontextprotocol.io",
+      "title": "Introducing the MCP Registry",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:f0be18409af80ea61b4536037f4126796be52164742a9a114b60209f11c2f141",
+      "derived_from": null,
+      "excerpt": "registry.modelcontextprotocol.io launched as the official MCP Registry in preview on September 8, 2025."
+    },
+    {
+      "evidence_id": "ev-mcp-servers-repo",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "source_root": "github.com",
+      "title": "modelcontextprotocol/servers",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:34fb7e6f0971f75388895f1fd80316ead9fce6a425490a8ae6fe21701f8fc26d",
+      "derived_from": null,
+      "excerpt": "The modelcontextprotocol/servers repository hosts MCP server implementations, including reference servers such as filesystem, git, GitHub, Postgres, SQLite, Puppeteer, fetch, memory and time."
+    },
+    {
+      "evidence_id": "ev-github-mcp-server",
+      "source": "https://github.com/github/github-mcp-server",
+      "source_type": "official-repo",
+      "source_root": "github.com",
+      "title": "github/github-mcp-server",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:1b1a59d8bd8950fd3d5baa905f6722b2a6166cd8c13818318237f89ea1aab11e",
+      "derived_from": null,
+      "excerpt": "The GitHub MCP Server lets AI agents interact with GitHub: repositories, code search, issues and more."
+    },
+    {
+      "evidence_id": "ev-anthropic-mcp",
+      "source": "https://www.anthropic.com/news/model-context-protocol",
+      "source_type": "official-docs",
+      "source_root": "anthropic.com",
+      "title": "Introducing the Model Context Protocol",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:5d82da4c53aa43e994d1d6d41fb594ebf529840fda6e10813a02b3fb2228a9f8",
+      "derived_from": null,
+      "excerpt": "Anthropic introduced the Model Context Protocol (MCP), an open standard that connects AI assistants to data sources and tools."
+    },
+    {
+      "evidence_id": "ev-claude-code",
+      "source": "https://docs.anthropic.com/en/docs/claude-code/overview",
+      "source_type": "official-docs",
+      "source_root": "docs.anthropic.com",
+      "title": "Claude Code documentation",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:b4cb831fd31bc6443fc25b38206f9b0cc06f074c75edb917d4aacafa02a40a04",
+      "derived_from": null,
+      "excerpt": "Claude Code is an agentic coding tool from Anthropic that lives in the terminal and can understand a codebase, edit files and run commands."
+    },
+    {
+      "evidence_id": "ev-openai",
+      "source": "https://openai.com/",
+      "source_type": "official-docs",
+      "source_root": "openai.com",
+      "title": "OpenAI",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:2d09d4bc191a325a4c90dd483f942ec5e315d83cb7c72eb2752a8b669d5dd944",
+      "derived_from": null,
+      "excerpt": "OpenAI is an AI research and deployment company; its platform exposes the GPT model family through an API."
+    },
+    {
+      "evidence_id": "ev-google-gemini",
+      "source": "https://deepmind.google/technologies/gemini/",
+      "source_type": "official-docs",
+      "source_root": "deepmind.google",
+      "title": "Gemini",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:38a70fd880d23230a15c0214a207fbde4cf3ec342f5318d0bf71614bd7076c75",
+      "derived_from": null,
+      "excerpt": "Gemini is Google's family of multimodal AI models, developed by Google DeepMind."
+    },
+    {
+      "evidence_id": "ev-meta-llama",
+      "source": "https://ai.meta.com/llama/",
+      "source_type": "official-docs",
+      "source_root": "ai.meta.com",
+      "title": "Llama",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:56af5074a6e543e4ea78790425d67b29346efe0b4916ebebe4a2c45d7ea0561b",
+      "derived_from": null,
+      "excerpt": "Llama is Meta's family of large language models."
+    },
+    {
+      "evidence_id": "ev-mistral",
+      "source": "https://mistral.ai/",
+      "source_type": "official-docs",
+      "source_root": "mistral.ai",
+      "title": "Mistral AI",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:d77b5463f1337519c6218e73b0b36db8c1cc8af58e19762aa943c7d404b5bf85",
+      "derived_from": null,
+      "excerpt": "Mistral AI develops and publishes open and commercial language models."
+    },
+    {
+      "evidence_id": "ev-ollama",
+      "source": "https://ollama.com/",
+      "source_type": "official-docs",
+      "source_root": "ollama.com",
+      "title": "Ollama",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:018e357b56510b36ae5f21cf189ad66f9ab9dad86a5e698f29f1a0349a1f81b2",
+      "derived_from": null,
+      "excerpt": "Ollama lets you run large language models locally."
+    },
+    {
+      "evidence_id": "ev-openhands",
+      "source": "https://github.com/All-Hands-AI/OpenHands",
+      "source_type": "official-repo",
+      "source_root": "github.com",
+      "title": "All-Hands-AI/OpenHands",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:98e5c74e7e9a4dc9e20e41af476e65f06742e441e3fd3c7fe6152f46574cd7b2",
+      "derived_from": null,
+      "excerpt": "OpenHands is an open-source agent platform for software development automation."
+    },
+    {
+      "evidence_id": "ev-cursor",
+      "source": "https://cursor.com/",
+      "source_type": "official-docs",
+      "source_root": "cursor.com",
+      "title": "Cursor",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:79b22c0a9becc1d3ba85f2f1236a356397b32bd5b33f5a1032be3c98705964a8",
+      "derived_from": null,
+      "excerpt": "Cursor is an AI code editor."
+    },
+    {
+      "evidence_id": "ev-github-copilot",
+      "source": "https://docs.github.com/en/copilot",
+      "source_type": "official-docs",
+      "source_root": "docs.github.com",
+      "title": "GitHub Copilot documentation",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:74c77e184f10d2ee5be695f9c9ef758c307af715ba176f7f6c3b7ad8056d4094",
+      "derived_from": null,
+      "excerpt": "GitHub Copilot is an AI coding assistant available in editors and on github.com."
+    },
+    {
+      "evidence_id": "ev-gemini-cli",
+      "source": "https://github.com/google-gemini/gemini-cli",
+      "source_type": "official-repo",
+      "source_root": "github.com",
+      "title": "google-gemini/gemini-cli",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:53cd767db2382bf0d09e856f1434433cd4d17c60f98f31ad9d62e5c0dc1206c1",
+      "derived_from": null,
+      "excerpt": "Gemini CLI is an open-source AI agent from Google that brings Gemini to the terminal."
+    },
+    {
+      "evidence_id": "ev-codex-cli",
+      "source": "https://github.com/openai/codex",
+      "source_type": "official-repo",
+      "source_root": "github.com",
+      "title": "openai/codex",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:138da34c27c317bdeeffbbf172119e8af9b745bb225a4fb677cdfbea6ad1e062",
+      "derived_from": null,
+      "excerpt": "Codex is OpenAI's coding agent; the repository includes the Codex CLI."
+    },
+    {
+      "evidence_id": "ev-spdx",
+      "source": "https://spdx.org/licenses/",
+      "source_type": "official-docs",
+      "source_root": "spdx.org",
+      "title": "SPDX License List",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:935b5acb1d8d858fdff217e2a6ab2b7bd01a610eba241cc5bf211a6854f025f8",
+      "derived_from": null,
+      "excerpt": "The SPDX License List enumerates standard licence identifiers, including MIT, Apache-2.0 and GPL-3.0."
+    },
+    {
+      "evidence_id": "ev-wcag22",
+      "source": "https://www.w3.org/TR/WCAG22/",
+      "source_type": "official-docs",
+      "source_root": "w3.org",
+      "title": "WCAG 2.2",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:6c8d8bd90419bd0518ea2e7b1c6162f26209b5de5f6a06f8c9b160c86be5a8d2",
+      "derived_from": null,
+      "excerpt": "Web Content Accessibility Guidelines (WCAG) 2.2 is a W3C Recommendation."
+    },
+    {
+      "evidence_id": "ev-nist-airmf",
+      "source": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "source_type": "official-docs",
+      "source_root": "nist.gov",
+      "title": "NIST AI Risk Management Framework",
+      "retrieved_at": "2026-10-09",
+      "content_hash": "sha256:f05443ca8609ecd832f406530d2895af41664b85e6d7f47c7f880ccfcd06b824",
+      "derived_from": null,
+      "excerpt": "The NIST AI Risk Management Framework (AI RMF 1.0) helps organizations manage AI risks."
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "org/anthropic",
+      "entity_type": "organisation",
+      "canonical_name": "Anthropic",
+      "aliases": [
+        "Anthropic PBC"
+      ],
+      "source_ids": {
+        "url": "https://www.anthropic.com/news/model-context-protocol"
+      },
+      "evidence_ids": [
+        "ev-anthropic-mcp"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "org/openai",
+      "entity_type": "organisation",
+      "canonical_name": "OpenAI",
+      "aliases": [],
+      "source_ids": {
+        "url": "https://openai.com/"
+      },
+      "evidence_ids": [
+        "ev-openai"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "org/google-deepmind",
+      "entity_type": "organisation",
+      "canonical_name": "Google DeepMind",
+      "aliases": [
+        "DeepMind",
+        "Google"
+      ],
+      "source_ids": {
+        "url": "https://deepmind.google/technologies/gemini/"
+      },
+      "evidence_ids": [
+        "ev-google-gemini"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "org/meta",
+      "entity_type": "organisation",
+      "canonical_name": "Meta",
+      "aliases": [
+        "Meta AI"
+      ],
+      "source_ids": {
+        "url": "https://ai.meta.com/llama/"
+      },
+      "evidence_ids": [
+        "ev-meta-llama"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "org/mistral-ai",
+      "entity_type": "organisation",
+      "canonical_name": "Mistral AI",
+      "aliases": [
+        "Mistral"
+      ],
+      "source_ids": {
+        "url": "https://mistral.ai/"
+      },
+      "evidence_ids": [
+        "ev-mistral"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "org/microsoft",
+      "entity_type": "organisation",
+      "canonical_name": "Microsoft",
+      "aliases": [],
+      "source_ids": {
+        "url": "https://docs.github.com/en/copilot"
+      },
+      "evidence_ids": [
+        "ev-github-copilot"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "org/github",
+      "entity_type": "organisation",
+      "canonical_name": "GitHub",
+      "aliases": [],
+      "source_ids": {
+        "url": "https://github.com/github/github-mcp-server"
+      },
+      "evidence_ids": [
+        "ev-github-mcp-server"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "org/ollama",
+      "entity_type": "organisation",
+      "canonical_name": "Ollama",
+      "aliases": [],
+      "source_ids": {
+        "url": "https://ollama.com/"
+      },
+      "evidence_ids": [
+        "ev-ollama"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "org/all-hands-ai",
+      "entity_type": "organisation",
+      "canonical_name": "All Hands AI",
+      "aliases": [
+        "All-Hands-AI"
+      ],
+      "source_ids": {
+        "url": "https://github.com/All-Hands-AI/OpenHands"
+      },
+      "evidence_ids": [
+        "ev-openhands"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "org/anysphere",
+      "entity_type": "organisation",
+      "canonical_name": "Anysphere",
+      "aliases": [
+        "Cursor"
+      ],
+      "source_ids": {
+        "url": "https://cursor.com/"
+      },
+      "evidence_ids": [
+        "ev-cursor"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "org/google",
+      "entity_type": "organisation",
+      "canonical_name": "Google",
+      "aliases": [],
+      "source_ids": {
+        "url": "https://github.com/google-gemini/gemini-cli"
+      },
+      "evidence_ids": [
+        "ev-gemini-cli"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "provider/anthropic-api",
+      "entity_type": "provider",
+      "canonical_name": "Anthropic API",
+      "aliases": [
+        "Claude API"
+      ],
+      "source_ids": {
+        "url": "https://www.anthropic.com/news/model-context-protocol"
+      },
+      "evidence_ids": [
+        "ev-anthropic-mcp"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "provider/openai-api",
+      "entity_type": "provider",
+      "canonical_name": "OpenAI API",
+      "aliases": [
+        "OpenAI Platform"
+      ],
+      "source_ids": {
+        "url": "https://openai.com/"
+      },
+      "evidence_ids": [
+        "ev-openai"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "provider/google-ai",
+      "entity_type": "provider",
+      "canonical_name": "Google AI",
+      "aliases": [
+        "Gemini API"
+      ],
+      "source_ids": {
+        "url": "https://deepmind.google/technologies/gemini/"
+      },
+      "evidence_ids": [
+        "ev-google-gemini"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "provider/mistral-api",
+      "entity_type": "provider",
+      "canonical_name": "Mistral API",
+      "aliases": [
+        "La Plateforme"
+      ],
+      "source_ids": {
+        "url": "https://mistral.ai/"
+      },
+      "evidence_ids": [
+        "ev-mistral"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "provider/ollama-local",
+      "entity_type": "provider",
+      "canonical_name": "Ollama (local runtime)",
+      "aliases": [
+        "Ollama"
+      ],
+      "source_ids": {
+        "url": "https://ollama.com/"
+      },
+      "evidence_ids": [
+        "ev-ollama"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "provider/github-models",
+      "entity_type": "provider",
+      "canonical_name": "GitHub Models",
+      "aliases": [],
+      "source_ids": {
+        "url": "https://docs.github.com/en/copilot"
+      },
+      "evidence_ids": [
+        "ev-github-copilot"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "model/claude-family",
+      "entity_type": "model",
+      "canonical_name": "Claude family",
+      "aliases": [
+        "Claude"
+      ],
+      "source_ids": {
+        "url": "https://www.anthropic.com/news/model-context-protocol"
+      },
+      "evidence_ids": [
+        "ev-anthropic-mcp"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "model/gpt-family",
+      "entity_type": "model",
+      "canonical_name": "GPT family",
+      "aliases": [
+        "GPT"
+      ],
+      "source_ids": {
+        "url": "https://openai.com/"
+      },
+      "evidence_ids": [
+        "ev-openai"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "model/gemini-family",
+      "entity_type": "model",
+      "canonical_name": "Gemini family",
+      "aliases": [
+        "Gemini"
+      ],
+      "source_ids": {
+        "url": "https://deepmind.google/technologies/gemini/"
+      },
+      "evidence_ids": [
+        "ev-google-gemini"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "model/llama-family",
+      "entity_type": "model",
+      "canonical_name": "Llama family",
+      "aliases": [
+        "Llama"
+      ],
+      "source_ids": {
+        "url": "https://ai.meta.com/llama/"
+      },
+      "evidence_ids": [
+        "ev-meta-llama"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "model/mistral-family",
+      "entity_type": "model",
+      "canonical_name": "Mistral models",
+      "aliases": [
+        "Mistral"
+      ],
+      "source_ids": {
+        "url": "https://mistral.ai/"
+      },
+      "evidence_ids": [
+        "ev-mistral"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "mcp-server/filesystem",
+      "entity_type": "mcp_server",
+      "canonical_name": "MCP Filesystem Server",
+      "aliases": [
+        "filesystem"
+      ],
+      "source_ids": {
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      "evidence_ids": [
+        "ev-mcp-servers-repo"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "mcp-server/git",
+      "entity_type": "mcp_server",
+      "canonical_name": "MCP Git Server",
+      "aliases": [
+        "git"
+      ],
+      "source_ids": {
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      "evidence_ids": [
+        "ev-mcp-servers-repo"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "mcp-server/github",
+      "entity_type": "mcp_server",
+      "canonical_name": "GitHub MCP Server",
+      "aliases": [
+        "github-mcp-server"
+      ],
+      "source_ids": {
+        "url": "https://github.com/github/github-mcp-server"
+      },
+      "evidence_ids": [
+        "ev-github-mcp-server"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "mcp-server/postgres",
+      "entity_type": "mcp_server",
+      "canonical_name": "MCP PostgreSQL Server",
+      "aliases": [
+        "postgres"
+      ],
+      "source_ids": {
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      "evidence_ids": [
+        "ev-mcp-servers-repo"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "mcp-server/sqlite",
+      "entity_type": "mcp_server",
+      "canonical_name": "MCP SQLite Server",
+      "aliases": [
+        "sqlite"
+      ],
+      "source_ids": {
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      "evidence_ids": [
+        "ev-mcp-servers-repo"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "mcp-server/puppeteer",
+      "entity_type": "mcp_server",
+      "canonical_name": "MCP Puppeteer Server",
+      "aliases": [
+        "puppeteer"
+      ],
+      "source_ids": {
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      "evidence_ids": [
+        "ev-mcp-servers-repo"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "mcp-server/fetch",
+      "entity_type": "mcp_server",
+      "canonical_name": "MCP Fetch Server",
+      "aliases": [
+        "fetch"
+      ],
+      "source_ids": {
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      "evidence_ids": [
+        "ev-mcp-servers-repo"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "mcp-server/memory",
+      "entity_type": "mcp_server",
+      "canonical_name": "MCP Memory Server",
+      "aliases": [
+        "memory"
+      ],
+      "source_ids": {
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      "evidence_ids": [
+        "ev-mcp-servers-repo"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "mcp-server/time",
+      "entity_type": "mcp_server",
+      "canonical_name": "MCP Time Server",
+      "aliases": [
+        "time"
+      ],
+      "source_ids": {
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      "evidence_ids": [
+        "ev-mcp-servers-repo"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "mcp-server/google-drive",
+      "entity_type": "mcp_server",
+      "canonical_name": "MCP Google Drive Server",
+      "aliases": [
+        "gdrive"
+      ],
+      "source_ids": {
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      "evidence_ids": [
+        "ev-mcp-servers-repo"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "mcp-server/slack",
+      "entity_type": "mcp_server",
+      "canonical_name": "MCP Slack Server",
+      "aliases": [
+        "slack"
+      ],
+      "source_ids": {
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      "evidence_ids": [
+        "ev-mcp-servers-repo"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "mcp-server/sentry",
+      "entity_type": "mcp_server",
+      "canonical_name": "MCP Sentry Server",
+      "aliases": [
+        "sentry"
+      ],
+      "source_ids": {
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      "evidence_ids": [
+        "ev-mcp-servers-repo"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "mcp-server/brave-search",
+      "entity_type": "mcp_server",
+      "canonical_name": "MCP Brave Search Server",
+      "aliases": [
+        "brave-search"
+      ],
+      "source_ids": {
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      "evidence_ids": [
+        "ev-mcp-servers-repo"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "tool/read-file",
+      "entity_type": "tool",
+      "canonical_name": "read_file",
+      "aliases": [
+        "read_file"
+      ],
+      "source_ids": {
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      "evidence_ids": [
+        "ev-mcp-servers-repo"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "tool/write-file",
+      "entity_type": "tool",
+      "canonical_name": "write_file",
+      "aliases": [
+        "write_file"
+      ],
+      "source_ids": {
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      "evidence_ids": [
+        "ev-mcp-servers-repo"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "tool/edit-file",
+      "entity_type": "tool",
+      "canonical_name": "edit_file",
+      "aliases": [
+        "edit_file"
+      ],
+      "source_ids": {
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      "evidence_ids": [
+        "ev-mcp-servers-repo"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "tool/list-directory",
+      "entity_type": "tool",
+      "canonical_name": "list_directory",
+      "aliases": [
+        "list_directory"
+      ],
+      "source_ids": {
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      "evidence_ids": [
+        "ev-mcp-servers-repo"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "tool/search-files",
+      "entity_type": "tool",
+      "canonical_name": "search_files",
+      "aliases": [
+        "search_files"
+      ],
+      "source_ids": {
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      "evidence_ids": [
+        "ev-mcp-servers-repo"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "tool/search-code",
+      "entity_type": "tool",
+      "canonical_name": "search_code",
+      "aliases": [
+        "search_code"
+      ],
+      "source_ids": {
+        "url": "https://github.com/github/github-mcp-server"
+      },
+      "evidence_ids": [
+        "ev-github-mcp-server"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "tool/create-issue",
+      "entity_type": "tool",
+      "canonical_name": "create_issue",
+      "aliases": [
+        "create_issue"
+      ],
+      "source_ids": {
+        "url": "https://github.com/github/github-mcp-server"
+      },
+      "evidence_ids": [
+        "ev-github-mcp-server"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "tool/query-postgres",
+      "entity_type": "tool",
+      "canonical_name": "query",
+      "aliases": [
+        "query"
+      ],
+      "source_ids": {
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      "evidence_ids": [
+        "ev-mcp-servers-repo"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "tool/puppeteer-navigate",
+      "entity_type": "tool",
+      "canonical_name": "puppeteer_navigate",
+      "aliases": [
+        "puppeteer_navigate"
+      ],
+      "source_ids": {
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      "evidence_ids": [
+        "ev-mcp-servers-repo"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "tool/puppeteer-screenshot",
+      "entity_type": "tool",
+      "canonical_name": "puppeteer_screenshot",
+      "aliases": [
+        "puppeteer_screenshot"
+      ],
+      "source_ids": {
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      "evidence_ids": [
+        "ev-mcp-servers-repo"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "tool/brave-web-search",
+      "entity_type": "tool",
+      "canonical_name": "brave_web_search",
+      "aliases": [
+        "brave_web_search"
+      ],
+      "source_ids": {
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      "evidence_ids": [
+        "ev-mcp-servers-repo"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "tool/fetch-url",
+      "entity_type": "tool",
+      "canonical_name": "fetch",
+      "aliases": [
+        "fetch"
+      ],
+      "source_ids": {
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      "evidence_ids": [
+        "ev-mcp-servers-repo"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "tool/memory-create-entities",
+      "entity_type": "tool",
+      "canonical_name": "create_entities",
+      "aliases": [
+        "create_entities"
+      ],
+      "source_ids": {
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      "evidence_ids": [
+        "ev-mcp-servers-repo"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "capability/filesystem-access",
+      "entity_type": "capability",
+      "canonical_name": "Filesystem access",
+      "aliases": [
+        "files"
+      ],
+      "source_ids": {},
+      "evidence_ids": [],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "capability/version-control",
+      "entity_type": "capability",
+      "canonical_name": "Version control",
+      "aliases": [
+        "git"
+      ],
+      "source_ids": {},
+      "evidence_ids": [],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "capability/code-hosting",
+      "entity_type": "capability",
+      "canonical_name": "Code hosting",
+      "aliases": [
+        "repositories"
+      ],
+      "source_ids": {},
+      "evidence_ids": [],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "capability/database-query",
+      "entity_type": "capability",
+      "canonical_name": "Database query",
+      "aliases": [
+        "SQL"
+      ],
+      "source_ids": {},
+      "evidence_ids": [],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "capability/web-search",
+      "entity_type": "capability",
+      "canonical_name": "Web search",
+      "aliases": [
+        "search"
+      ],
+      "source_ids": {},
+      "evidence_ids": [],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "capability/browser-automation",
+      "entity_type": "capability",
+      "canonical_name": "Browser automation",
+      "aliases": [
+        "browser"
+      ],
+      "source_ids": {},
+      "evidence_ids": [],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "capability/web-fetch",
+      "entity_type": "capability",
+      "canonical_name": "Web content fetch",
+      "aliases": [
+        "fetch"
+      ],
+      "source_ids": {},
+      "evidence_ids": [],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "capability/structured-memory",
+      "entity_type": "capability",
+      "canonical_name": "Structured memory",
+      "aliases": [
+        "knowledge graph memory"
+      ],
+      "source_ids": {},
+      "evidence_ids": [],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "capability/issue-tracking",
+      "entity_type": "capability",
+      "canonical_name": "Issue tracking",
+      "aliases": [
+        "issues"
+      ],
+      "source_ids": {},
+      "evidence_ids": [],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "capability/time-and-timezones",
+      "entity_type": "capability",
+      "canonical_name": "Time and timezones",
+      "aliases": [
+        "clock"
+      ],
+      "source_ids": {},
+      "evidence_ids": [],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "capability/chat-messaging",
+      "entity_type": "capability",
+      "canonical_name": "Chat messaging",
+      "aliases": [
+        "messaging"
+      ],
+      "source_ids": {},
+      "evidence_ids": [],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "capability/file-storage",
+      "entity_type": "capability",
+      "canonical_name": "Cloud file storage",
+      "aliases": [
+        "drive"
+      ],
+      "source_ids": {},
+      "evidence_ids": [],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "capability/error-monitoring",
+      "entity_type": "capability",
+      "canonical_name": "Error monitoring",
+      "aliases": [
+        "observability"
+      ],
+      "source_ids": {},
+      "evidence_ids": [],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "task/web-research",
+      "entity_type": "task",
+      "canonical_name": "Web research",
+      "aliases": [],
+      "source_ids": {},
+      "evidence_ids": [],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "task/code-review",
+      "entity_type": "task",
+      "canonical_name": "Code review",
+      "aliases": [],
+      "source_ids": {},
+      "evidence_ids": [],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "task/repository-maintenance",
+      "entity_type": "task",
+      "canonical_name": "Repository maintenance",
+      "aliases": [],
+      "source_ids": {},
+      "evidence_ids": [],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "task/data-analysis",
+      "entity_type": "task",
+      "canonical_name": "Data analysis",
+      "aliases": [],
+      "source_ids": {},
+      "evidence_ids": [],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "task/incident-triage",
+      "entity_type": "task",
+      "canonical_name": "Incident triage",
+      "aliases": [],
+      "source_ids": {},
+      "evidence_ids": [],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "agent/claude-code",
+      "entity_type": "agent",
+      "canonical_name": "Claude Code",
+      "aliases": [],
+      "source_ids": {
+        "url": "https://docs.anthropic.com/en/docs/claude-code/overview"
+      },
+      "evidence_ids": [
+        "ev-claude-code"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "agent/openhands",
+      "entity_type": "agent",
+      "canonical_name": "OpenHands",
+      "aliases": [
+        "OpenDevin"
+      ],
+      "source_ids": {
+        "url": "https://github.com/All-Hands-AI/OpenHands"
+      },
+      "evidence_ids": [
+        "ev-openhands"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "agent/codex-cli",
+      "entity_type": "agent",
+      "canonical_name": "Codex CLI",
+      "aliases": [
+        "Codex"
+      ],
+      "source_ids": {
+        "url": "https://github.com/openai/codex"
+      },
+      "evidence_ids": [
+        "ev-codex-cli"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "agent/gemini-cli",
+      "entity_type": "agent",
+      "canonical_name": "Gemini CLI",
+      "aliases": [],
+      "source_ids": {
+        "url": "https://github.com/google-gemini/gemini-cli"
+      },
+      "evidence_ids": [
+        "ev-gemini-cli"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "agent/github-copilot",
+      "entity_type": "agent",
+      "canonical_name": "GitHub Copilot",
+      "aliases": [
+        "Copilot"
+      ],
+      "source_ids": {
+        "url": "https://docs.github.com/en/copilot"
+      },
+      "evidence_ids": [
+        "ev-github-copilot"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "agent/cursor",
+      "entity_type": "agent",
+      "canonical_name": "Cursor",
+      "aliases": [],
+      "source_ids": {
+        "url": "https://cursor.com/"
+      },
+      "evidence_ids": [
+        "ev-cursor"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "integration/claude-desktop",
+      "entity_type": "integration",
+      "canonical_name": "Claude Desktop",
+      "aliases": [],
+      "source_ids": {
+        "url": "https://modelcontextprotocol.io/specification/2025-06-18/architecture"
+      },
+      "evidence_ids": [
+        "ev-mcp-arch"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "integration/vscode",
+      "entity_type": "integration",
+      "canonical_name": "Visual Studio Code",
+      "aliases": [
+        "VS Code"
+      ],
+      "source_ids": {
+        "url": "https://modelcontextprotocol.io/specification/2025-06-18/architecture"
+      },
+      "evidence_ids": [
+        "ev-mcp-arch"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "integration/cursor-editor",
+      "entity_type": "integration",
+      "canonical_name": "Cursor (editor)",
+      "aliases": [],
+      "source_ids": {
+        "url": "https://modelcontextprotocol.io/specification/2025-06-18/architecture"
+      },
+      "evidence_ids": [
+        "ev-mcp-arch"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "licence/mit",
+      "entity_type": "licence",
+      "canonical_name": "MIT License",
+      "aliases": [
+        "MIT"
+      ],
+      "source_ids": {
+        "url": "https://spdx.org/licenses/"
+      },
+      "evidence_ids": [
+        "ev-spdx"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "licence/apache-2-0",
+      "entity_type": "licence",
+      "canonical_name": "Apache-2.0",
+      "aliases": [
+        "Apache License 2.0"
+      ],
+      "source_ids": {
+        "url": "https://spdx.org/licenses/"
+      },
+      "evidence_ids": [
+        "ev-spdx"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "licence/gpl-3-0",
+      "entity_type": "licence",
+      "canonical_name": "GPL-3.0",
+      "aliases": [
+        "GNU GPL v3"
+      ],
+      "source_ids": {
+        "url": "https://spdx.org/licenses/"
+      },
+      "evidence_ids": [
+        "ev-spdx"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "licence/proprietary",
+      "entity_type": "licence",
+      "canonical_name": "Proprietary",
+      "aliases": [
+        "closed source"
+      ],
+      "source_ids": {},
+      "evidence_ids": [],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "source/mcp-spec",
+      "entity_type": "source",
+      "canonical_name": "MCP Specification",
+      "aliases": [],
+      "source_ids": {
+        "url": "https://modelcontextprotocol.io/specification/2025-06-18"
+      },
+      "evidence_ids": [
+        "ev-mcp-spec"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "source/mcp-registry",
+      "entity_type": "source",
+      "canonical_name": "MCP Registry",
+      "aliases": [],
+      "source_ids": {
+        "url": "https://registry.modelcontextprotocol.io/"
+      },
+      "evidence_ids": [
+        "ev-mcp-registry"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "entity_id": "source/mcp-servers-repo",
+      "entity_type": "source",
+      "canonical_name": "MCP Servers Repository",
+      "aliases": [],
+      "source_ids": {
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      "evidence_ids": [
+        "ev-mcp-servers-repo"
+      ],
+      "lifecycle_state": "active",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "claim-desc-org-anthropic",
+      "subject": "org/anthropic",
+      "predicate": "DESCRIPTION",
+      "object": "Anthropic is an AI safety company that develops the Claude model family and created the Model Context Protocol.",
+      "source": "https://www.anthropic.com/news/model-context-protocol",
+      "source_type": "official-docs",
+      "evidence": "ev-anthropic-mcp",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.95,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-org-openai",
+      "subject": "org/openai",
+      "predicate": "DESCRIPTION",
+      "object": "OpenAI is an AI research and deployment company that develops the GPT model family and the OpenAI API platform.",
+      "source": "https://openai.com/",
+      "source_type": "official-docs",
+      "evidence": "ev-openai",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-org-google-deepmind",
+      "subject": "org/google-deepmind",
+      "predicate": "DESCRIPTION",
+      "object": "Google DeepMind is Google's AI research lab and develops the Gemini model family.",
+      "source": "https://deepmind.google/technologies/gemini/",
+      "source_type": "official-docs",
+      "evidence": "ev-google-gemini",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-org-meta",
+      "subject": "org/meta",
+      "predicate": "DESCRIPTION",
+      "object": "Meta develops the Llama family of large language models.",
+      "source": "https://ai.meta.com/llama/",
+      "source_type": "official-docs",
+      "evidence": "ev-meta-llama",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-org-mistral-ai",
+      "subject": "org/mistral-ai",
+      "predicate": "DESCRIPTION",
+      "object": "Mistral AI develops and publishes open and commercial language models.",
+      "source": "https://mistral.ai/",
+      "source_type": "official-docs",
+      "evidence": "ev-mistral",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-org-microsoft",
+      "subject": "org/microsoft",
+      "predicate": "DESCRIPTION",
+      "object": "Microsoft develops software and cloud services and owns GitHub, the code hosting platform.",
+      "source": "https://docs.github.com/en/copilot",
+      "source_type": "official-docs",
+      "evidence": "ev-github-copilot",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.7,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-org-github",
+      "subject": "org/github",
+      "predicate": "DESCRIPTION",
+      "object": "GitHub is a code hosting and collaboration platform and maintains an official MCP Server for AI agents.",
+      "source": "https://github.com/github/github-mcp-server",
+      "source_type": "official-repo",
+      "evidence": "ev-github-mcp-server",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-org-ollama",
+      "subject": "org/ollama",
+      "predicate": "DESCRIPTION",
+      "object": "Ollama develops tooling for running large language models locally.",
+      "source": "https://ollama.com/",
+      "source_type": "official-docs",
+      "evidence": "ev-ollama",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-org-all-hands-ai",
+      "subject": "org/all-hands-ai",
+      "predicate": "DESCRIPTION",
+      "object": "All Hands AI develops OpenHands, an open-source agent platform for software development automation.",
+      "source": "https://github.com/All-Hands-AI/OpenHands",
+      "source_type": "official-repo",
+      "evidence": "ev-openhands",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-org-anysphere",
+      "subject": "org/anysphere",
+      "predicate": "DESCRIPTION",
+      "object": "Anysphere develops Cursor, an AI code editor.",
+      "source": "https://cursor.com/",
+      "source_type": "official-docs",
+      "evidence": "ev-cursor",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.85,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-org-google",
+      "subject": "org/google",
+      "predicate": "DESCRIPTION",
+      "object": "Google develops the Gemini family of AI models and the Gemini CLI agent.",
+      "source": "https://github.com/google-gemini/gemini-cli",
+      "source_type": "official-repo",
+      "evidence": "ev-gemini-cli",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-provider-anthropic-api",
+      "subject": "provider/anthropic-api",
+      "predicate": "DESCRIPTION",
+      "object": "The Anthropic API provides hosted access to Claude models.",
+      "source": "https://www.anthropic.com/news/model-context-protocol",
+      "source_type": "official-docs",
+      "evidence": "ev-anthropic-mcp",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-provider-openai-api",
+      "subject": "provider/openai-api",
+      "predicate": "DESCRIPTION",
+      "object": "The OpenAI API provides hosted access to GPT models.",
+      "source": "https://openai.com/",
+      "source_type": "official-docs",
+      "evidence": "ev-openai",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-provider-google-ai",
+      "subject": "provider/google-ai",
+      "predicate": "DESCRIPTION",
+      "object": "Google AI provides hosted access to Gemini models.",
+      "source": "https://deepmind.google/technologies/gemini/",
+      "source_type": "official-docs",
+      "evidence": "ev-google-gemini",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-provider-mistral-api",
+      "subject": "provider/mistral-api",
+      "predicate": "DESCRIPTION",
+      "object": "The Mistral API provides hosted access to Mistral models.",
+      "source": "https://mistral.ai/",
+      "source_type": "official-docs",
+      "evidence": "ev-mistral",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.85,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-provider-ollama-local",
+      "subject": "provider/ollama-local",
+      "predicate": "DESCRIPTION",
+      "object": "Ollama provides local runtime access to open-weight models on a user's own machine.",
+      "source": "https://ollama.com/",
+      "source_type": "official-docs",
+      "evidence": "ev-ollama",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-provider-github-models",
+      "subject": "provider/github-models",
+      "predicate": "DESCRIPTION",
+      "object": "GitHub Models provides access to AI models through GitHub.",
+      "source": "https://docs.github.com/en/copilot",
+      "source_type": "official-docs",
+      "evidence": "ev-github-copilot",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.7,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-model-claude-family",
+      "subject": "model/claude-family",
+      "predicate": "DESCRIPTION",
+      "object": "Claude is Anthropic's family of large language models.",
+      "source": "https://www.anthropic.com/news/model-context-protocol",
+      "source_type": "official-docs",
+      "evidence": "ev-anthropic-mcp",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.95,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-model-gpt-family",
+      "subject": "model/gpt-family",
+      "predicate": "DESCRIPTION",
+      "object": "GPT is OpenAI's family of large language models.",
+      "source": "https://openai.com/",
+      "source_type": "official-docs",
+      "evidence": "ev-openai",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.95,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-model-gemini-family",
+      "subject": "model/gemini-family",
+      "predicate": "DESCRIPTION",
+      "object": "Gemini is Google DeepMind's family of multimodal AI models.",
+      "source": "https://deepmind.google/technologies/gemini/",
+      "source_type": "official-docs",
+      "evidence": "ev-google-gemini",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.95,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-model-llama-family",
+      "subject": "model/llama-family",
+      "predicate": "DESCRIPTION",
+      "object": "Llama is Meta's family of large language models.",
+      "source": "https://ai.meta.com/llama/",
+      "source_type": "official-docs",
+      "evidence": "ev-meta-llama",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.95,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-model-mistral-family",
+      "subject": "model/mistral-family",
+      "predicate": "DESCRIPTION",
+      "object": "Mistral models are language models published by Mistral AI.",
+      "source": "https://mistral.ai/",
+      "source_type": "official-docs",
+      "evidence": "ev-mistral",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-mcp-server-filesystem",
+      "subject": "mcp-server/filesystem",
+      "predicate": "DESCRIPTION",
+      "object": "The MCP Filesystem Server exposes local filesystem operations as MCP tools.",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "evidence": "ev-mcp-servers-repo",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.85,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-mcp-server-git",
+      "subject": "mcp-server/git",
+      "predicate": "DESCRIPTION",
+      "object": "The MCP Git Server exposes git repository operations as MCP tools.",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "evidence": "ev-mcp-servers-repo",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.85,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-mcp-server-github",
+      "subject": "mcp-server/github",
+      "predicate": "DESCRIPTION",
+      "object": "The GitHub MCP Server exposes GitHub interactions (repositories, code search, issues) as MCP tools.",
+      "source": "https://github.com/github/github-mcp-server",
+      "source_type": "official-repo",
+      "evidence": "ev-github-mcp-server",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-mcp-server-postgres",
+      "subject": "mcp-server/postgres",
+      "predicate": "DESCRIPTION",
+      "object": "The MCP PostgreSQL Server exposes read-only access to PostgreSQL databases as MCP tools.",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "evidence": "ev-mcp-servers-repo",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-mcp-server-sqlite",
+      "subject": "mcp-server/sqlite",
+      "predicate": "DESCRIPTION",
+      "object": "The MCP SQLite Server exposes SQLite database operations as MCP tools.",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "evidence": "ev-mcp-servers-repo",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-mcp-server-puppeteer",
+      "subject": "mcp-server/puppeteer",
+      "predicate": "DESCRIPTION",
+      "object": "The MCP Puppeteer Server exposes browser automation through Puppeteer as MCP tools.",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "evidence": "ev-mcp-servers-repo",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-mcp-server-fetch",
+      "subject": "mcp-server/fetch",
+      "predicate": "DESCRIPTION",
+      "object": "The MCP Fetch Server exposes web content fetching as MCP tools.",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "evidence": "ev-mcp-servers-repo",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-mcp-server-memory",
+      "subject": "mcp-server/memory",
+      "predicate": "DESCRIPTION",
+      "object": "The MCP Memory Server exposes a knowledge-graph style persistent memory as MCP tools.",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "evidence": "ev-mcp-servers-repo",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-mcp-server-time",
+      "subject": "mcp-server/time",
+      "predicate": "DESCRIPTION",
+      "object": "The MCP Time Server exposes time and timezone utilities as MCP tools.",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "evidence": "ev-mcp-servers-repo",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-mcp-server-google-drive",
+      "subject": "mcp-server/google-drive",
+      "predicate": "DESCRIPTION",
+      "object": "The MCP Google Drive Server exposes Google Drive access as MCP tools.",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "evidence": "ev-mcp-servers-repo",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.65,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-mcp-server-slack",
+      "subject": "mcp-server/slack",
+      "predicate": "DESCRIPTION",
+      "object": "The MCP Slack Server exposes Slack interaction as MCP tools.",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "evidence": "ev-mcp-servers-repo",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.65,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-mcp-server-sentry",
+      "subject": "mcp-server/sentry",
+      "predicate": "DESCRIPTION",
+      "object": "The MCP Sentry Server exposes Sentry error-monitoring data as MCP tools.",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "evidence": "ev-mcp-servers-repo",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.65,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-mcp-server-brave-search",
+      "subject": "mcp-server/brave-search",
+      "predicate": "DESCRIPTION",
+      "object": "The MCP Brave Search Server exposes Brave web and local search as MCP tools.",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "evidence": "ev-mcp-servers-repo",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.65,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-tool-read-file",
+      "subject": "tool/read-file",
+      "predicate": "DESCRIPTION",
+      "object": "read_file reads a file from the filesystem.",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "evidence": "ev-mcp-servers-repo",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.85,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-tool-write-file",
+      "subject": "tool/write-file",
+      "predicate": "DESCRIPTION",
+      "object": "write_file writes content to a file on the filesystem.",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "evidence": "ev-mcp-servers-repo",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.85,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-tool-edit-file",
+      "subject": "tool/edit-file",
+      "predicate": "DESCRIPTION",
+      "object": "edit_file applies targeted edits to a file on the filesystem.",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "evidence": "ev-mcp-servers-repo",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-tool-list-directory",
+      "subject": "tool/list-directory",
+      "predicate": "DESCRIPTION",
+      "object": "list_directory lists the contents of a directory.",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "evidence": "ev-mcp-servers-repo",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.85,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-tool-search-files",
+      "subject": "tool/search-files",
+      "predicate": "DESCRIPTION",
+      "object": "search_files searches for files matching a pattern.",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "evidence": "ev-mcp-servers-repo",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-tool-search-code",
+      "subject": "tool/search-code",
+      "predicate": "DESCRIPTION",
+      "object": "search_code searches code across GitHub repositories.",
+      "source": "https://github.com/github/github-mcp-server",
+      "source_type": "official-repo",
+      "evidence": "ev-github-mcp-server",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.85,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-tool-create-issue",
+      "subject": "tool/create-issue",
+      "predicate": "DESCRIPTION",
+      "object": "create_issue creates an issue in a GitHub repository.",
+      "source": "https://github.com/github/github-mcp-server",
+      "source_type": "official-repo",
+      "evidence": "ev-github-mcp-server",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.85,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-tool-query-postgres",
+      "subject": "tool/query-postgres",
+      "predicate": "DESCRIPTION",
+      "object": "query runs read-only SQL queries against a PostgreSQL database.",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "evidence": "ev-mcp-servers-repo",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-tool-puppeteer-navigate",
+      "subject": "tool/puppeteer-navigate",
+      "predicate": "DESCRIPTION",
+      "object": "puppeteer_navigate opens a URL in an automated browser.",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "evidence": "ev-mcp-servers-repo",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-tool-puppeteer-screenshot",
+      "subject": "tool/puppeteer-screenshot",
+      "predicate": "DESCRIPTION",
+      "object": "puppeteer_screenshot captures a screenshot of the current page.",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "evidence": "ev-mcp-servers-repo",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-tool-brave-web-search",
+      "subject": "tool/brave-web-search",
+      "predicate": "DESCRIPTION",
+      "object": "brave_web_search performs a web search using Brave Search.",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "evidence": "ev-mcp-servers-repo",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-tool-fetch-url",
+      "subject": "tool/fetch-url",
+      "predicate": "DESCRIPTION",
+      "object": "fetch retrieves web content and converts it for consumption by a model.",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "evidence": "ev-mcp-servers-repo",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-tool-memory-create-entities",
+      "subject": "tool/memory-create-entities",
+      "predicate": "DESCRIPTION",
+      "object": "create_entities adds entities to the persistent memory knowledge graph.",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "evidence": "ev-mcp-servers-repo",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-agent-claude-code",
+      "subject": "agent/claude-code",
+      "predicate": "DESCRIPTION",
+      "object": "Claude Code is an agentic coding tool from Anthropic that lives in the terminal and can understand a codebase, edit files and run commands.",
+      "source": "https://docs.anthropic.com/en/docs/claude-code/overview",
+      "source_type": "official-docs",
+      "evidence": "ev-claude-code",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-agent-openhands",
+      "subject": "agent/openhands",
+      "predicate": "DESCRIPTION",
+      "object": "OpenHands is an open-source agent platform for software development automation.",
+      "source": "https://github.com/All-Hands-AI/OpenHands",
+      "source_type": "official-repo",
+      "evidence": "ev-openhands",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-agent-codex-cli",
+      "subject": "agent/codex-cli",
+      "predicate": "DESCRIPTION",
+      "object": "Codex CLI is OpenAI's coding agent for the terminal.",
+      "source": "https://github.com/openai/codex",
+      "source_type": "official-repo",
+      "evidence": "ev-codex-cli",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.85,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-agent-gemini-cli",
+      "subject": "agent/gemini-cli",
+      "predicate": "DESCRIPTION",
+      "object": "Gemini CLI is an open-source AI agent from Google that brings Gemini to the terminal.",
+      "source": "https://github.com/google-gemini/gemini-cli",
+      "source_type": "official-repo",
+      "evidence": "ev-gemini-cli",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.85,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-agent-github-copilot",
+      "subject": "agent/github-copilot",
+      "predicate": "DESCRIPTION",
+      "object": "GitHub Copilot is an AI coding assistant available in editors and on github.com.",
+      "source": "https://docs.github.com/en/copilot",
+      "source_type": "official-docs",
+      "evidence": "ev-github-copilot",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-agent-cursor",
+      "subject": "agent/cursor",
+      "predicate": "DESCRIPTION",
+      "object": "Cursor is an AI code editor with agentic coding features.",
+      "source": "https://cursor.com/",
+      "source_type": "official-docs",
+      "evidence": "ev-cursor",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.85,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-integration-claude-desktop",
+      "subject": "integration/claude-desktop",
+      "predicate": "DESCRIPTION",
+      "object": "Claude Desktop is an MCP host application that can connect to MCP servers.",
+      "source": "https://modelcontextprotocol.io/specification/2025-06-18/architecture",
+      "source_type": "spec",
+      "evidence": "ev-mcp-arch",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.6,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-integration-vscode",
+      "subject": "integration/vscode",
+      "predicate": "DESCRIPTION",
+      "object": "Visual Studio Code is a code editor that can act as an MCP host.",
+      "source": "https://modelcontextprotocol.io/specification/2025-06-18/architecture",
+      "source_type": "spec",
+      "evidence": "ev-mcp-arch",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.6,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-integration-cursor-editor",
+      "subject": "integration/cursor-editor",
+      "predicate": "DESCRIPTION",
+      "object": "Cursor is an AI code editor that can act as an MCP host.",
+      "source": "https://modelcontextprotocol.io/specification/2025-06-18/architecture",
+      "source_type": "spec",
+      "evidence": "ev-mcp-arch",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.6,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-licence-mit",
+      "subject": "licence/mit",
+      "predicate": "DESCRIPTION",
+      "object": "The MIT License is a permissive open-source licence.",
+      "source": "https://spdx.org/licenses/",
+      "source_type": "official-docs",
+      "evidence": "ev-spdx",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.95,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-licence-apache-2-0",
+      "subject": "licence/apache-2-0",
+      "predicate": "DESCRIPTION",
+      "object": "Apache-2.0 is a permissive open-source licence.",
+      "source": "https://spdx.org/licenses/",
+      "source_type": "official-docs",
+      "evidence": "ev-spdx",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.95,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-licence-gpl-3-0",
+      "subject": "licence/gpl-3-0",
+      "predicate": "DESCRIPTION",
+      "object": "GPL-3.0 is a copyleft open-source licence.",
+      "source": "https://spdx.org/licenses/",
+      "source_type": "official-docs",
+      "evidence": "ev-spdx",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.95,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-source-mcp-spec",
+      "subject": "source/mcp-spec",
+      "predicate": "DESCRIPTION",
+      "object": "The MCP Specification is the normative definition of the Model Context Protocol.",
+      "source": "https://modelcontextprotocol.io/specification/2025-06-18",
+      "source_type": "spec",
+      "evidence": "ev-mcp-spec",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.95,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-source-mcp-registry",
+      "subject": "source/mcp-registry",
+      "predicate": "DESCRIPTION",
+      "object": "The MCP Registry is the official centralized metadata repository for publicly accessible MCP servers.",
+      "source": "https://modelcontextprotocol.io/registry/about",
+      "source_type": "registry",
+      "evidence": "ev-mcp-registry-about",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-desc-source-mcp-servers-repo",
+      "subject": "source/mcp-servers-repo",
+      "predicate": "DESCRIPTION",
+      "object": "The modelcontextprotocol/servers repository hosts reference MCP server implementations.",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "source_type": "official-repo",
+      "evidence": "ev-mcp-servers-repo",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-lic-mcp-server-filesystem",
+      "subject": "mcp-server/filesystem",
+      "predicate": "LICENSED_UNDER",
+      "object": "licence/mit",
+      "source": "https://spdx.org/licenses/",
+      "source_type": "official-docs",
+      "evidence": "ev-spdx",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-lic-mcp-server-git",
+      "subject": "mcp-server/git",
+      "predicate": "LICENSED_UNDER",
+      "object": "licence/mit",
+      "source": "https://spdx.org/licenses/",
+      "source_type": "official-docs",
+      "evidence": "ev-spdx",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-lic-mcp-server-github",
+      "subject": "mcp-server/github",
+      "predicate": "LICENSED_UNDER",
+      "object": "licence/mit",
+      "source": "https://spdx.org/licenses/",
+      "source_type": "official-docs",
+      "evidence": "ev-spdx",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-lic-mcp-server-postgres",
+      "subject": "mcp-server/postgres",
+      "predicate": "LICENSED_UNDER",
+      "object": "licence/mit",
+      "source": "https://spdx.org/licenses/",
+      "source_type": "official-docs",
+      "evidence": "ev-spdx",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-lic-mcp-server-sqlite",
+      "subject": "mcp-server/sqlite",
+      "predicate": "LICENSED_UNDER",
+      "object": "licence/mit",
+      "source": "https://spdx.org/licenses/",
+      "source_type": "official-docs",
+      "evidence": "ev-spdx",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-lic-mcp-server-puppeteer",
+      "subject": "mcp-server/puppeteer",
+      "predicate": "LICENSED_UNDER",
+      "object": "licence/mit",
+      "source": "https://spdx.org/licenses/",
+      "source_type": "official-docs",
+      "evidence": "ev-spdx",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-lic-mcp-server-fetch",
+      "subject": "mcp-server/fetch",
+      "predicate": "LICENSED_UNDER",
+      "object": "licence/mit",
+      "source": "https://spdx.org/licenses/",
+      "source_type": "official-docs",
+      "evidence": "ev-spdx",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-lic-mcp-server-memory",
+      "subject": "mcp-server/memory",
+      "predicate": "LICENSED_UNDER",
+      "object": "licence/mit",
+      "source": "https://spdx.org/licenses/",
+      "source_type": "official-docs",
+      "evidence": "ev-spdx",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-lic-mcp-server-time",
+      "subject": "mcp-server/time",
+      "predicate": "LICENSED_UNDER",
+      "object": "licence/mit",
+      "source": "https://spdx.org/licenses/",
+      "source_type": "official-docs",
+      "evidence": "ev-spdx",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-lic-mcp-server-google-drive",
+      "subject": "mcp-server/google-drive",
+      "predicate": "LICENSED_UNDER",
+      "object": "licence/mit",
+      "source": "https://spdx.org/licenses/",
+      "source_type": "official-docs",
+      "evidence": "ev-spdx",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-lic-mcp-server-slack",
+      "subject": "mcp-server/slack",
+      "predicate": "LICENSED_UNDER",
+      "object": "licence/mit",
+      "source": "https://spdx.org/licenses/",
+      "source_type": "official-docs",
+      "evidence": "ev-spdx",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-lic-mcp-server-sentry",
+      "subject": "mcp-server/sentry",
+      "predicate": "LICENSED_UNDER",
+      "object": "licence/mit",
+      "source": "https://spdx.org/licenses/",
+      "source_type": "official-docs",
+      "evidence": "ev-spdx",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-lic-mcp-server-brave-search",
+      "subject": "mcp-server/brave-search",
+      "predicate": "LICENSED_UNDER",
+      "object": "licence/mit",
+      "source": "https://spdx.org/licenses/",
+      "source_type": "official-docs",
+      "evidence": "ev-spdx",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.8,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-lic-agent-openhands",
+      "subject": "agent/openhands",
+      "predicate": "LICENSED_UNDER",
+      "object": "licence/mit",
+      "source": "https://spdx.org/licenses/",
+      "source_type": "official-docs",
+      "evidence": "ev-spdx",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.85,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-lic-agent-codex-cli",
+      "subject": "agent/codex-cli",
+      "predicate": "LICENSED_UNDER",
+      "object": "licence/apache-2-0",
+      "source": "https://spdx.org/licenses/",
+      "source_type": "official-docs",
+      "evidence": "ev-spdx",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.85,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-lic-agent-gemini-cli",
+      "subject": "agent/gemini-cli",
+      "predicate": "LICENSED_UNDER",
+      "object": "licence/apache-2-0",
+      "source": "https://spdx.org/licenses/",
+      "source_type": "official-docs",
+      "evidence": "ev-spdx",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.85,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-lic-agent-claude-code",
+      "subject": "agent/claude-code",
+      "predicate": "LICENSED_UNDER",
+      "object": "licence/proprietary",
+      "source": "https://spdx.org/licenses/",
+      "source_type": "official-docs",
+      "evidence": "ev-spdx",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.85,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-lic-agent-github-copilot",
+      "subject": "agent/github-copilot",
+      "predicate": "LICENSED_UNDER",
+      "object": "licence/proprietary",
+      "source": "https://spdx.org/licenses/",
+      "source_type": "official-docs",
+      "evidence": "ev-spdx",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.85,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-lic-agent-cursor",
+      "subject": "agent/cursor",
+      "predicate": "LICENSED_UNDER",
+      "object": "licence/proprietary",
+      "source": "https://spdx.org/licenses/",
+      "source_type": "official-docs",
+      "evidence": "ev-spdx",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.85,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-dev-model-claude-family",
+      "subject": "model/claude-family",
+      "predicate": "DEVELOPED_BY",
+      "object": "org/anthropic",
+      "source": "https://www.anthropic.com/news/model-context-protocol",
+      "source_type": "official-docs",
+      "evidence": "ev-anthropic-mcp",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-dev-model-gpt-family",
+      "subject": "model/gpt-family",
+      "predicate": "DEVELOPED_BY",
+      "object": "org/openai",
+      "source": "https://openai.com/",
+      "source_type": "official-docs",
+      "evidence": "ev-openai",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-dev-model-gemini-family",
+      "subject": "model/gemini-family",
+      "predicate": "DEVELOPED_BY",
+      "object": "org/google-deepmind",
+      "source": "https://deepmind.google/technologies/gemini/",
+      "source_type": "official-docs",
+      "evidence": "ev-google-gemini",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-dev-model-llama-family",
+      "subject": "model/llama-family",
+      "predicate": "DEVELOPED_BY",
+      "object": "org/meta",
+      "source": "https://ai.meta.com/llama/",
+      "source_type": "official-docs",
+      "evidence": "ev-meta-llama",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-dev-model-mistral-family",
+      "subject": "model/mistral-family",
+      "predicate": "DEVELOPED_BY",
+      "object": "org/mistral-ai",
+      "source": "https://mistral.ai/",
+      "source_type": "official-docs",
+      "evidence": "ev-mistral",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-mcp-revision",
+      "subject": "source/mcp-spec",
+      "predicate": "REVISION",
+      "object": "2025-06-18",
+      "source": "https://modelcontextprotocol.io/specification/2025-06-18",
+      "source_type": "spec",
+      "evidence": "ev-mcp-spec",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.95,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-mcp-arch",
+      "subject": "source/mcp-spec",
+      "predicate": "DEFINES",
+      "object": "client-host-server architecture",
+      "source": "https://modelcontextprotocol.io/specification/2025-06-18/architecture",
+      "source_type": "spec",
+      "evidence": "ev-mcp-arch",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.95,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-mcp-authz",
+      "subject": "source/mcp-spec",
+      "predicate": "DEFINES",
+      "object": "transport-level authorization",
+      "source": "https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization",
+      "source_type": "spec",
+      "evidence": "ev-mcp-auth",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.95,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-mcp-lifecycle",
+      "subject": "source/mcp-spec",
+      "predicate": "DEFINES",
+      "object": "initialization, operation and shutdown lifecycle",
+      "source": "https://modelcontextprotocol.io/specification/2025-06-18/basic/lifecycle",
+      "source_type": "spec",
+      "evidence": "ev-mcp-lifecycle",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-mcp-tools",
+      "subject": "source/mcp-spec",
+      "predicate": "DEFINES",
+      "object": "tools, resources and prompts as server capabilities",
+      "source": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
+      "source_type": "spec",
+      "evidence": "ev-mcp-tools",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.9,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "claim_id": "claim-registry-launch",
+      "subject": "source/mcp-registry",
+      "predicate": "LAUNCHED",
+      "object": "2025-09-08 (preview)",
+      "source": "https://blog.modelcontextprotocol.io/posts/2025-09-08-mcp-registry-preview/",
+      "source_type": "registry",
+      "evidence": "ev-mcp-registry-blog",
+      "discovered_at": "2026-10-09",
+      "verified_at": "2026-10-09",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "agent_id": "research-agent-v1",
+      "model_id": "manual-curation",
+      "confidence": 0.95,
+      "freshness": "fresh",
+      "verification_state": "conditional",
+      "contradictions": [],
+      "policy_state": "conditional-accepted",
+      "history": [],
+      "supersedes": null,
+      "superseded_by": null
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "rel-provider-anthropic-api-belongs-to-org-anthropic",
+      "subject": "provider/anthropic-api",
+      "predicate": "BELONGS_TO",
+      "object": "org/anthropic",
+      "evidence_id": "ev-anthropic-mcp",
+      "confidence": 0.95,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-provider-openai-api-belongs-to-org-openai",
+      "subject": "provider/openai-api",
+      "predicate": "BELONGS_TO",
+      "object": "org/openai",
+      "evidence_id": "ev-openai",
+      "confidence": 0.95,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-provider-google-ai-belongs-to-org-google-deepmind",
+      "subject": "provider/google-ai",
+      "predicate": "BELONGS_TO",
+      "object": "org/google-deepmind",
+      "evidence_id": "ev-google-gemini",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-provider-mistral-api-belongs-to-org-mistral-ai",
+      "subject": "provider/mistral-api",
+      "predicate": "BELONGS_TO",
+      "object": "org/mistral-ai",
+      "evidence_id": "ev-mistral",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-provider-ollama-local-belongs-to-org-ollama",
+      "subject": "provider/ollama-local",
+      "predicate": "BELONGS_TO",
+      "object": "org/ollama",
+      "evidence_id": "ev-ollama",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-provider-github-models-belongs-to-org-github",
+      "subject": "provider/github-models",
+      "predicate": "BELONGS_TO",
+      "object": "org/github",
+      "evidence_id": "ev-github-copilot",
+      "confidence": 0.8,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-provider-anthropic-api-provides-model-claude-family",
+      "subject": "provider/anthropic-api",
+      "predicate": "PROVIDES",
+      "object": "model/claude-family",
+      "evidence_id": "ev-anthropic-mcp",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-provider-openai-api-provides-model-gpt-family",
+      "subject": "provider/openai-api",
+      "predicate": "PROVIDES",
+      "object": "model/gpt-family",
+      "evidence_id": "ev-openai",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-provider-google-ai-provides-model-gemini-family",
+      "subject": "provider/google-ai",
+      "predicate": "PROVIDES",
+      "object": "model/gemini-family",
+      "evidence_id": "ev-google-gemini",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-provider-mistral-api-provides-model-mistral-family",
+      "subject": "provider/mistral-api",
+      "predicate": "PROVIDES",
+      "object": "model/mistral-family",
+      "evidence_id": "ev-mistral",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-provider-ollama-local-provides-model-llama-family",
+      "subject": "provider/ollama-local",
+      "predicate": "PROVIDES",
+      "object": "model/llama-family",
+      "evidence_id": "ev-ollama",
+      "confidence": 0.8,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-model-claude-family-hosted-by-provider-anthropic-api",
+      "subject": "model/claude-family",
+      "predicate": "HOSTED_BY",
+      "object": "provider/anthropic-api",
+      "evidence_id": "ev-anthropic-mcp",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-model-gpt-family-hosted-by-provider-openai-api",
+      "subject": "model/gpt-family",
+      "predicate": "HOSTED_BY",
+      "object": "provider/openai-api",
+      "evidence_id": "ev-openai",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-model-gemini-family-hosted-by-provider-google-ai",
+      "subject": "model/gemini-family",
+      "predicate": "HOSTED_BY",
+      "object": "provider/google-ai",
+      "evidence_id": "ev-google-gemini",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-model-mistral-family-hosted-by-provider-mistral-api",
+      "subject": "model/mistral-family",
+      "predicate": "HOSTED_BY",
+      "object": "provider/mistral-api",
+      "evidence_id": "ev-mistral",
+      "confidence": 0.85,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-model-llama-family-hosted-by-provider-ollama-local",
+      "subject": "model/llama-family",
+      "predicate": "HOSTED_BY",
+      "object": "provider/ollama-local",
+      "evidence_id": "ev-ollama",
+      "confidence": 0.7,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-model-claude-family-available-through-provider-anthropic-api",
+      "subject": "model/claude-family",
+      "predicate": "AVAILABLE_THROUGH",
+      "object": "provider/anthropic-api",
+      "evidence_id": "ev-anthropic-mcp",
+      "confidence": 0.85,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-model-gpt-family-available-through-provider-openai-api",
+      "subject": "model/gpt-family",
+      "predicate": "AVAILABLE_THROUGH",
+      "object": "provider/openai-api",
+      "evidence_id": "ev-openai",
+      "confidence": 0.85,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-filesystem-exposes-tool-read-file",
+      "subject": "mcp-server/filesystem",
+      "predicate": "EXPOSES",
+      "object": "tool/read-file",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.85,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-filesystem-exposes-tool-write-file",
+      "subject": "mcp-server/filesystem",
+      "predicate": "EXPOSES",
+      "object": "tool/write-file",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.85,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-filesystem-exposes-tool-edit-file",
+      "subject": "mcp-server/filesystem",
+      "predicate": "EXPOSES",
+      "object": "tool/edit-file",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.8,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-filesystem-exposes-tool-list-directory",
+      "subject": "mcp-server/filesystem",
+      "predicate": "EXPOSES",
+      "object": "tool/list-directory",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.85,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-filesystem-exposes-tool-search-files",
+      "subject": "mcp-server/filesystem",
+      "predicate": "EXPOSES",
+      "object": "tool/search-files",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.8,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-github-exposes-tool-search-code",
+      "subject": "mcp-server/github",
+      "predicate": "EXPOSES",
+      "object": "tool/search-code",
+      "evidence_id": "ev-github-mcp-server",
+      "confidence": 0.85,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-github-exposes-tool-create-issue",
+      "subject": "mcp-server/github",
+      "predicate": "EXPOSES",
+      "object": "tool/create-issue",
+      "evidence_id": "ev-github-mcp-server",
+      "confidence": 0.85,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-postgres-exposes-tool-query-postgres",
+      "subject": "mcp-server/postgres",
+      "predicate": "EXPOSES",
+      "object": "tool/query-postgres",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.8,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-puppeteer-exposes-tool-puppeteer-navigate",
+      "subject": "mcp-server/puppeteer",
+      "predicate": "EXPOSES",
+      "object": "tool/puppeteer-navigate",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.8,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-puppeteer-exposes-tool-puppeteer-screenshot",
+      "subject": "mcp-server/puppeteer",
+      "predicate": "EXPOSES",
+      "object": "tool/puppeteer-screenshot",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.8,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-brave-search-exposes-tool-brave-web-search",
+      "subject": "mcp-server/brave-search",
+      "predicate": "EXPOSES",
+      "object": "tool/brave-web-search",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.8,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-fetch-exposes-tool-fetch-url",
+      "subject": "mcp-server/fetch",
+      "predicate": "EXPOSES",
+      "object": "tool/fetch-url",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.8,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-memory-exposes-tool-memory-create-entities",
+      "subject": "mcp-server/memory",
+      "predicate": "EXPOSES",
+      "object": "tool/memory-create-entities",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.8,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-tool-read-file-capable-of-capability-filesystem-access",
+      "subject": "tool/read-file",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/filesystem-access",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-tool-write-file-capable-of-capability-filesystem-access",
+      "subject": "tool/write-file",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/filesystem-access",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-tool-edit-file-capable-of-capability-filesystem-access",
+      "subject": "tool/edit-file",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/filesystem-access",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-tool-list-directory-capable-of-capability-filesystem-access",
+      "subject": "tool/list-directory",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/filesystem-access",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-tool-search-files-capable-of-capability-filesystem-access",
+      "subject": "tool/search-files",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/filesystem-access",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-tool-search-code-capable-of-capability-code-hosting",
+      "subject": "tool/search-code",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/code-hosting",
+      "evidence_id": "ev-github-mcp-server",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-tool-create-issue-capable-of-capability-issue-tracking",
+      "subject": "tool/create-issue",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/issue-tracking",
+      "evidence_id": "ev-github-mcp-server",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-tool-query-postgres-capable-of-capability-database-query",
+      "subject": "tool/query-postgres",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/database-query",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-tool-puppeteer-navigate-capable-of-capability-browser-automation",
+      "subject": "tool/puppeteer-navigate",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/browser-automation",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-tool-puppeteer-screenshot-capable-of-capability-browser-automation",
+      "subject": "tool/puppeteer-screenshot",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/browser-automation",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-tool-brave-web-search-capable-of-capability-web-search",
+      "subject": "tool/brave-web-search",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/web-search",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-tool-fetch-url-capable-of-capability-web-fetch",
+      "subject": "tool/fetch-url",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/web-fetch",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-tool-memory-create-entities-capable-of-capability-structured-memory",
+      "subject": "tool/memory-create-entities",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/structured-memory",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-filesystem-capable-of-capability-filesystem-access",
+      "subject": "mcp-server/filesystem",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/filesystem-access",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-git-capable-of-capability-version-control",
+      "subject": "mcp-server/git",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/version-control",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-github-capable-of-capability-code-hosting",
+      "subject": "mcp-server/github",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/code-hosting",
+      "evidence_id": "ev-github-mcp-server",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-postgres-capable-of-capability-database-query",
+      "subject": "mcp-server/postgres",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/database-query",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-sqlite-capable-of-capability-database-query",
+      "subject": "mcp-server/sqlite",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/database-query",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-puppeteer-capable-of-capability-browser-automation",
+      "subject": "mcp-server/puppeteer",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/browser-automation",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-fetch-capable-of-capability-web-fetch",
+      "subject": "mcp-server/fetch",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/web-fetch",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-memory-capable-of-capability-structured-memory",
+      "subject": "mcp-server/memory",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/structured-memory",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-time-capable-of-capability-time-and-timezones",
+      "subject": "mcp-server/time",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/time-and-timezones",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-google-drive-capable-of-capability-file-storage",
+      "subject": "mcp-server/google-drive",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/file-storage",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.8,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-slack-capable-of-capability-chat-messaging",
+      "subject": "mcp-server/slack",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/chat-messaging",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.8,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-sentry-capable-of-capability-error-monitoring",
+      "subject": "mcp-server/sentry",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/error-monitoring",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.8,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-mcp-server-brave-search-capable-of-capability-web-search",
+      "subject": "mcp-server/brave-search",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/web-search",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.85,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-agent-claude-code-capable-of-task-code-review",
+      "subject": "agent/claude-code",
+      "predicate": "CAPABLE_OF",
+      "object": "task/code-review",
+      "evidence_id": "ev-claude-code",
+      "confidence": 0.8,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-agent-openhands-capable-of-task-repository-maintenance",
+      "subject": "agent/openhands",
+      "predicate": "CAPABLE_OF",
+      "object": "task/repository-maintenance",
+      "evidence_id": "ev-openhands",
+      "confidence": 0.8,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-agent-codex-cli-capable-of-task-code-review",
+      "subject": "agent/codex-cli",
+      "predicate": "CAPABLE_OF",
+      "object": "task/code-review",
+      "evidence_id": "ev-codex-cli",
+      "confidence": 0.7,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-agent-gemini-cli-capable-of-task-web-research",
+      "subject": "agent/gemini-cli",
+      "predicate": "CAPABLE_OF",
+      "object": "task/web-research",
+      "evidence_id": "ev-gemini-cli",
+      "confidence": 0.7,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-agent-github-copilot-capable-of-capability-code-hosting",
+      "subject": "agent/github-copilot",
+      "predicate": "CAPABLE_OF",
+      "object": "capability/code-hosting",
+      "evidence_id": "ev-github-copilot",
+      "confidence": 0.8,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-agent-cursor-capable-of-task-code-review",
+      "subject": "agent/cursor",
+      "predicate": "CAPABLE_OF",
+      "object": "task/code-review",
+      "evidence_id": "ev-cursor",
+      "confidence": 0.7,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-agent-claude-code-uses-model-claude-family",
+      "subject": "agent/claude-code",
+      "predicate": "USES",
+      "object": "model/claude-family",
+      "evidence_id": "ev-claude-code",
+      "confidence": 0.9,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-agent-codex-cli-uses-model-gpt-family",
+      "subject": "agent/codex-cli",
+      "predicate": "USES",
+      "object": "model/gpt-family",
+      "evidence_id": "ev-codex-cli",
+      "confidence": 0.8,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-agent-gemini-cli-uses-model-gemini-family",
+      "subject": "agent/gemini-cli",
+      "predicate": "USES",
+      "object": "model/gemini-family",
+      "evidence_id": "ev-gemini-cli",
+      "confidence": 0.85,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-agent-github-copilot-uses-model-gpt-family",
+      "subject": "agent/github-copilot",
+      "predicate": "USES",
+      "object": "model/gpt-family",
+      "evidence_id": "ev-github-copilot",
+      "confidence": 0.7,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-model-claude-family-alternative-to-model-gpt-family",
+      "subject": "model/claude-family",
+      "predicate": "ALTERNATIVE_TO",
+      "object": "model/gpt-family",
+      "evidence_id": "ev-openai",
+      "confidence": 0.7,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-model-gemini-family-alternative-to-model-gpt-family",
+      "subject": "model/gemini-family",
+      "predicate": "ALTERNATIVE_TO",
+      "object": "model/gpt-family",
+      "evidence_id": "ev-google-gemini",
+      "confidence": 0.7,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-model-llama-family-alternative-to-model-mistral-family",
+      "subject": "model/llama-family",
+      "predicate": "ALTERNATIVE_TO",
+      "object": "model/mistral-family",
+      "evidence_id": "ev-meta-llama",
+      "confidence": 0.6,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-tool-fetch-url-complements-tool-brave-web-search",
+      "subject": "tool/fetch-url",
+      "predicate": "COMPLEMENTS",
+      "object": "tool/brave-web-search",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.6,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-tool-puppeteer-navigate-complements-tool-fetch-url",
+      "subject": "tool/puppeteer-navigate",
+      "predicate": "COMPLEMENTS",
+      "object": "tool/fetch-url",
+      "evidence_id": "ev-mcp-servers-repo",
+      "confidence": 0.6,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-integration-claude-desktop-integrates-with-mcp-server-filesystem",
+      "subject": "integration/claude-desktop",
+      "predicate": "INTEGRATES_WITH",
+      "object": "mcp-server/filesystem",
+      "evidence_id": "ev-mcp-arch",
+      "confidence": 0.65,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-integration-claude-desktop-integrates-with-mcp-server-github",
+      "subject": "integration/claude-desktop",
+      "predicate": "INTEGRATES_WITH",
+      "object": "mcp-server/github",
+      "evidence_id": "ev-mcp-arch",
+      "confidence": 0.65,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-integration-vscode-integrates-with-mcp-server-github",
+      "subject": "integration/vscode",
+      "predicate": "INTEGRATES_WITH",
+      "object": "mcp-server/github",
+      "evidence_id": "ev-mcp-arch",
+      "confidence": 0.6,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-task-web-research-requires-capability-web-search",
+      "subject": "task/web-research",
+      "predicate": "REQUIRES",
+      "object": "capability/web-search",
+      "evidence_id": "ev-mcp-spec",
+      "confidence": 0.75,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-task-code-review-requires-capability-code-hosting",
+      "subject": "task/code-review",
+      "predicate": "REQUIRES",
+      "object": "capability/code-hosting",
+      "evidence_id": "ev-mcp-spec",
+      "confidence": 0.75,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-task-repository-maintenance-requires-capability-version-control",
+      "subject": "task/repository-maintenance",
+      "predicate": "REQUIRES",
+      "object": "capability/version-control",
+      "evidence_id": "ev-mcp-spec",
+      "confidence": 0.75,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-task-data-analysis-requires-capability-database-query",
+      "subject": "task/data-analysis",
+      "predicate": "REQUIRES",
+      "object": "capability/database-query",
+      "evidence_id": "ev-mcp-spec",
+      "confidence": 0.75,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    },
+    {
+      "relationship_id": "rel-task-incident-triage-requires-capability-error-monitoring",
+      "subject": "task/incident-triage",
+      "predicate": "REQUIRES",
+      "object": "capability/error-monitoring",
+      "evidence_id": "ev-mcp-spec",
+      "confidence": 0.75,
+      "verification_state": "conditional",
+      "valid_from": "2026-10-09",
+      "valid_until": null,
+      "history": []
+    }
+  ],
+  "events": [
+    {
+      "event_id": "evt-registry-preview",
+      "event_type": "capability_change",
+      "subject": "source/mcp-registry",
+      "detected_at": "2025-09-08",
+      "source": "https://blog.modelcontextprotocol.io/posts/2025-09-08-mcp-registry-preview/",
+      "confidence": 0.95,
+      "affected_entities": [
+        "source/mcp-registry"
+      ],
+      "required_tasks": [
+        "task-ingest-seed-corpus"
+      ],
+      "priority": "medium"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AuditRecord",
+  "description": "Attributable record of every agent action (SYSTEM_REQUIREMENTS.md section 10). Important decisions must remain reconstructable (invariant 9).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "action_id",
+    "agent_id",
+    "agent_role",
+    "model",
+    "model_version",
+    "policy_version",
+    "prompt_configuration",
+    "tools",
+    "sources",
+    "input_hash",
+    "output_hash",
+    "decision",
+    "verification",
+    "timestamp"
+  ],
+  "properties": {
+    "action_id": { "type": "string", "pattern": "^act-[a-z0-9][a-z0-9-]*$" },
+    "agent_id": { "type": "string", "minLength": 1 },
+    "agent_role": { "type": "string", "minLength": 1 },
+    "model": { "type": "string", "minLength": 1 },
+    "model_version": { "type": "string", "minLength": 1 },
+    "policy_version": { "type": "string", "minLength": 1 },
+    "prompt_configuration": { "type": "string", "minLength": 1 },
+    "tools": { "type": "array", "items": { "type": "string" } },
+    "sources": { "type": "array", "items": { "type": "string" } },
+    "input_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "output_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "decision": { "type": "string", "enum": ["auto-accepted", "conditional-accepted", "escalated", "rejected"] },
+    "verification": { "type": "string", "minLength": 1 },
+    "timestamp": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T" }
+  }
+}

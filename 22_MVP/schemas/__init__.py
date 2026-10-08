@@ -1,0 +1,1 @@
+# SystemVirtue MVP schemas package

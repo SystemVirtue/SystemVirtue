@@ -2,6 +2,11 @@
 .DS_Store
 **/.DS_Store
 .freebuff/preview-*.log
+**/.freebuff/preview-*.log
+
+# Python bytecode
+__pycache__/
+*.pyc
 
 # runtime / derived data under the MVP
 22_MVP/var/

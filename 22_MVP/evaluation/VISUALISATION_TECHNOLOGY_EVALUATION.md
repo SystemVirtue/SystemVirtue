@@ -18,8 +18,10 @@ meaning** — every visualisation must have an equivalent semantic text form
 
 ## Measured reality (2026-10-09)
 
-- Canonical store: 97 entities (82 curated + 15 live registry records),
-  80+ relationships, 93+ claims.
+- Canonical store: 82 curated entities (seed corpus; verified by ingest
+  count 2026-10-09). A previously reported "97 entities (82 curated + 15
+  live registry records)" figure has no reproducible artifact behind it and
+  should not be cited.
 - Scale test (`tests/test_scale.py`): 10× corpus (~820 entities) — bounded
   graph traversal and search both inside a 2 s budget; a depth-2 graph
   neighbourhood stays under 40 nodes by construction.

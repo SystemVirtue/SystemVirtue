@@ -1,9 +1,11 @@
 # 22_MVP — SystemVirtue Validation/MVP Vertical Slice
 
 The buildable vertical slice specified by the research package
-(`00_README`–`21_APPENDICES`): a provenance-carrying knowledge core for the
+(`00_README`–`21_APPENDICES` — *not in this repository*, present only in the
+local checkout): a provenance-carrying knowledge core for the
 AI-agents/MCP ecosystem, an accessible exploration interface, and the
-validation kit that can actually run `16_VALIDATION/UX_VALIDATION.md`.
+validation kit that can actually run `16_VALIDATION/UX_VALIDATION.md`
+(*not in this repository*).
 
 Everything is Python 3.9 stdlib + SQLite + vanilla JS. No dependencies, no
 credentials, no paid services.

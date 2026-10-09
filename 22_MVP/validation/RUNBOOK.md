@@ -18,7 +18,7 @@ SHA-256 of the curated excerpts.
 First run creates `22_MVP/var/systemvirtue.db` and runs the full
 verification pipeline (DISCOVER→…→AUDIT). Delete the db to re-ingest.
 
-## 3. Test suite (81 tests)
+## 3. Test suite (101 tests)
 
     cd 22_MVP && python3 -m unittest discover -s tests -t .
 
@@ -33,6 +33,11 @@ All must pass before any validation round.
 
 Runs 2 synthetic participants × 2 conditions × 10 tasks through the real
 servers and writes:
+
+Outcomes are **hard-coded per condition** in `pilot.py` (baseline branches
+always emit `correct: False`), so the A/B delta is predetermined by the
+harness. The pilot proves every metric is computable — it is not evidence
+of a usability difference.
 
 - `validation/out/pilot_events.jsonl` — instrumented events
 - `validation/out/questionnaires.json` — synthetic responses (labelled)
@@ -50,6 +55,7 @@ numbers as human results.**
 Scheduling without a daemon (cron):
 
     0 4 * * * cd /path/to/SystemVirtue_Concept && python3 22_MVP/sync/engine.py --limit 200
+    # NOTE: single-page fetch only; never add --mark-missing until full-sync exists
 
 Semantics:
 
@@ -59,7 +65,11 @@ Semantics:
   revisions** (history preserved); every change emits a ChangeEvent with
   `required_tasks` and an audit row.
 - `--mark-missing` additionally deprecates previously-synced servers that
-  are no longer in the registry (use on full, unfiltered syncs only).
+  are no longer in the registry. **Do not use it yet**: sync fetches a
+  single page (the cursor is never looped), so a "partial, filtered" run
+  would deprecate everything absent from that one page. A full-sync mode
+  must land first, and the cron example below must not add the flag until
+  then.
 - Network hard controls: HTTPS + host allowlist in `sync/registry.py`,
   timeout and response size caps, no credentials.
 - Latest run summary: `22_MVP/var/sync_report.json`.

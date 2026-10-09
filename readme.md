@@ -12,25 +12,28 @@ exercised by a test, a live run, or a browser session; claims marked
 ### 1.1 The research package (authoritative specification)
 
 The project began as a research/thesis package, transcribed verbatim into
-this repository: **42 Markdown documents** across `00_README/`–`21_APPENDICES/`,
+this checkout: **42 Markdown documents** across `00_README/`–`21_APPENDICES/`,
 from the manifest file
-[ SYSTEMVIRTUE_COMPLETE_RESERACH_THESIS_TECHNICAL_SPECIFICATION_PACKAGE.md](%20SYSTEMVIRTUE_COMPLETE_RESERACH_THESIS_TECHNICAL_SPECIFICATION_PACKAGE.md)
-(headings and Markdown preserved exactly as given).
+[ SYSTEMVIRTUE_COMPLETE_RESERACH_THESIS_TECHNICAL_SPECIFICATION_PACKAGE.md](%20SYSTEMVIRTUE_COMPLETE_RESERACH_THESIS_TECHNICAL_SPECIFICATION_PACKAGE.md) *(not in this repository)*
+(headings and Markdown preserved exactly as given). The package exists on
+disk but is **untracked**, so every link into it below 404s on GitHub; each
+is marked *(not in this repository)*. Owner decision pending: commit / keep
+private / drop.
 
-Authority chain ([DOCUMENT_MAP](00_README/DOCUMENT_MAP.md)):
+Authority chain ([DOCUMENT_MAP](00_README/DOCUMENT_MAP.md) *(not in this repository)*):
 thesis → technical specification → architecture → requirements →
 implementation → validation. The documents that govern the build:
 
-- [Master Thesis](01_THESIS/SYSTEMVIRTUE_THESIS.md) and [Strategic Conclusion](01_THESIS/STRATEGIC_CONCLUSION.md)
-- [System Requirements](15_TECHNICAL_SPECIFICATION/SYSTEM_REQUIREMENTS.md) — FR-K/S/N/P/R/A/G, claim schema (§5), agent contract (§8), audit record (§10), 10 architectural invariants (§12)
-- [UX Validation Framework](16_VALIDATION/UX_VALIDATION.md) — 9 metrics, 10 required test tasks, mandatory baseline comparison
-- [MVP Scope](17_ROADMAP/MVP_SCOPE.md) — 12 required features, deliberate exclusions, 6 go/no-go success criteria
-- [Requirements Traceability](21_APPENDICES/REQUIREMENTS_TRACEABILITY.md) — evidence→…→validation, 10 named tests
-- [Open Research Questions](21_APPENDICES/OPEN_QUESTIONS.md) — 15 questions that must stay open until empirically tested
+- [Master Thesis](01_THESIS/SYSTEMVIRTUE_THESIS.md) *(not in this repository)* and [Strategic Conclusion](01_THESIS/STRATEGIC_CONCLUSION.md) *(not in this repository)*
+- [System Requirements](15_TECHNICAL_SPECIFICATION/SYSTEM_REQUIREMENTS.md) *(not in this repository)* — FR-K/S/N/P/R/A/G, claim schema (§5), agent contract (§8), audit record (§10), 10 architectural invariants (§12)
+- [UX Validation Framework](16_VALIDATION/UX_VALIDATION.md) *(not in this repository)* — 9 metrics, 10 required test tasks, mandatory baseline comparison
+- [MVP Scope](17_ROADMAP/MVP_SCOPE.md) *(not in this repository)* — 12 required features, deliberate exclusions, 6 go/no-go success criteria
+- [Requirements Traceability](21_APPENDICES/REQUIREMENTS_TRACEABILITY.md) *(not in this repository)* — evidence→…→validation, 10 named tests
+- [Open Research Questions](21_APPENDICES/OPEN_QUESTIONS.md) *(not in this repository)* — 15 questions that must stay open until empirically tested
 
 ### 1.2 The notes source
 
-[ENTIRE_INITIAL_CHATGPT_CONVERSATION_THREAD.md](ENTIRE_INITIAL_CHATGPT_CONVERSATION_THREAD.md)
+[ENTIRE_INITIAL_CHATGPT_CONVERSATION_THREAD.md](ENTIRE_INITIAL_CHATGPT_CONVERSATION_THREAD.md) *(not in this repository)*
 (≈26k lines) is the raw research conversation the package was distilled from.
 Its key strategic finding, underweighted in the package itself: free-tier
 directories and routers already exist — "a directory of free AI APIs is
@@ -43,15 +46,15 @@ execution?).
 A review-and-plan phase produced a 4-phase vertical-slice plan (approved
 2026-10-09): Phase 0 spec-as-code → Phase 1 knowledge core → Phase 2 MVP
 interface → Phase 3 validation kit → Phase 4 go/no-go gate. Stack decided per
-[TECHNOLOGY_LANDSCAPE](12_TECHNOLOGY_RESEARCH/TECHNOLOGY_LANDSCAPE.md)
+[TECHNOLOGY_LANDSCAPE](12_TECHNOLOGY_RESEARCH/TECHNOLOGY_LANDSCAPE.md) *(not in this repository)*
 "least complex technology": Python 3.9 stdlib + SQLite + vanilla JS/SVG, zero
-external services, zero credentials ([cost controls](13_ZERO_COST/TECHNICAL_COST_CONTROLS.md)).
+external services, zero credentials ([cost controls](13_ZERO_COST/TECHNICAL_COST_CONTROLS.md) *(not in this repository)*).
 
 ---
 
 ## 2. Current status
 
-Everything below lives in **`22_MVP/`** (56 files). Layout and quickstart:
+Everything below lives in **`22_MVP/`** (48 tracked files; runtime artifacts are untracked). Layout and quickstart:
 [22_MVP/README.md](22_MVP/README.md); operating procedure:
 [validation/RUNBOOK.md](22_MVP/validation/RUNBOOK.md).
 
@@ -59,32 +62,35 @@ Everything below lives in **`22_MVP/`** (56 files). Layout and quickstart:
 
 | Component | Where | Status |
 | --- | --- | --- |
-| JSON Schemas (Claim/Entity/Relationship/Evidence/Event/AgentContract/AuditRecord) + stdlib validator | `22_MVP/schemas/` | Derived verbatim from [SYSTEM_REQUIREMENTS](15_TECHNICAL_SPECIFICATION/SYSTEM_REQUIREMENTS.md) §4–§10 |
+| JSON Schemas (Claim/Entity/Relationship/Evidence/Event/AgentContract/AuditRecord) + stdlib validator | `22_MVP/schemas/` | Derived from [SYSTEM_REQUIREMENTS](15_TECHNICAL_SPECIFICATION/SYSTEM_REQUIREMENTS.md) *(not in this repository)* §4–§10 |
 | Append-only SQLite store (supersede-chained history, hashed audit rows) + derived search index | `22_MVP/store/` | Indexes rebuildable from canonical knowledge |
 | Verification pipeline DISCOVER→…→AUDIT with deterministic acceptance policy | `22_MVP/pipeline/ingest.py` | "Ten copied pages are one source" enforced; hostile input rejected |
 | Curated seed corpus | `22_MVP/corpus/` | 82 entities, 93 claims, 80 relationships, 27 excerpt-hashed evidence records, 1 ecosystem event — official sources only, volatile facts excluded |
 | Accessible MVP web app (12 required features) | `22_MVP/app/` | Search + facets, entity pages with claim-level provenance/freshness, relationship navigation, comparison, saved/history (browser-only), optional SVG view, constrained NL exploration with citations + uncertainty; semantic-zoom Ecosystem map (macro clusters → meso entities → micro contextual inspector, breadcrumbs, layer toggles, My-Map vs uncharted footprint markers, text-equivalent tables) and Changes & freshness feed; relationship graph with depth selector (1–3) and keyboard zoom — all charts decorative with authoritative table/list equivalents |
-| Visualisation technology decision record | `22_MVP/evaluation/VISUALISATION_TECHNOLOGY_EVALUATION.md` | Evidence-based adoption ladder: SVG at current scale → Canvas 2D ≈1k elements → Sigma.js/WebGL ≈5k nodes → WebGPU at million-scale; no dependency needed at 97 entities |
+| Visualisation technology decision record | `22_MVP/evaluation/VISUALISATION_TECHNOLOGY_EVALUATION.md` | Evidence-based adoption ladder: SVG at current scale → Canvas 2D ≈1k elements → Sigma.js/WebGL ≈5k nodes → WebGPU at million-scale; no dependency needed at 82 curated entities |
 | Baseline comparator (conventional search/directory) | `22_MVP/validation/baseline/` | The B condition UX_VALIDATION requires |
 | Metrics engine (9 UX metrics + SUS/NASA-TLX) | `22_MVP/validation/metrics.py` | Known-value unit tests |
-| Automated pilot (2 synthetic participants × 2 conditions × 10 tasks) | `22_MVP/validation/pilot.py` | All 14 metric keys computed for both conditions from 154 instrumented events; output labelled synthetic |
+| Automated pilot (2 synthetic participants × 2 conditions × 10 tasks) | `22_MVP/validation/pilot.py` | All 14 metric keys computed for both conditions from instrumented events; output labelled synthetic. **Outcomes are hard-coded per condition** (the baseline branches always emit `correct: False`), so the A/B delta is a harness fixture, not a measurement — see §2.3 |
 | Study-ready protocol pack | `22_MVP/validation/protocol/` | PROTOCOL, TASKS (T1–T10 per condition), CONSENT, SUS, NASA_TLX, MEASURES, INTERVIEW_GUIDE |
 | Go/no-go report template wired to the 6 MVP success criteria | `22_MVP/validation/REPORT_TEMPLATE.md` | proceed / pivot / stop decision rule |
 | Traceability-as-code: every FR-* → implementation → test, all 10 named validations | `22_MVP/traceability/traceability.json` | Invariants 1–10 each have a machine check |
-| **Live MCP Registry sync** | `22_MVP/sync/` | Allowlisted fetch → normalise → read-only diff → pipeline apply; ChangeEvents with `required_tasks`; changed fields become superseding revisions; `--mark-missing` deprecation; `--daemon`/cron scheduling |
+| **Live MCP Registry sync** | `22_MVP/sync/` | Allowlisted fetch → normalise → read-only diff → pipeline apply; ChangeEvents with `required_tasks`; changed fields become superseding revisions; `--mark-missing` deprecation (single-page only — do not schedule yet); `--daemon`/cron scheduling |
 
 ### 2.2 Verification evidence **[verified]**
 
 - **Test suite (fresh run 2026-10-09): `cd 22_MVP && python3 -m unittest discover -s tests -t .` → 101 tests, OK, exit 0.** Covers schemas, pipeline policy matrix, error injection, contradiction preservation (FR-K07), append-only history, derived index, all 10 architectural invariants, 100% provenance audit, metrics known values, 10×-corpus scale budget, registry sync (mocked), end-to-end over HTTP, and `/api/overview` aggregates matching the store exactly.
-- **Live registry sync runs [verified]:** run 1 fetched 25 real records → 15 unique servers (isLatest dedupe) → 15 creates, 0 errors, every claim carrying registry-URL provenance; immediate re-run → 15 unchanged (idempotent). Daemon loop exercised: 2 scheduled cycles, logs flushed through termination. Store now holds 97 entities (82 curated + 15 live), 16 ecosystem events, 153 audit records.
+- **Live registry sync (mocked tests + live dry-run) [verified]:** `tests/test_sync.py` covers plan/apply, revisions, deprecation and dry-run against mocked pages. Live check run 2026-10-09: `python3 22_MVP/sync/engine.py --limit 5 --dry-run` → `sync ok: {"create": 2, "revise": 0, "unchanged": 0, "deprecated": 0, "errors": 0}` (fetch succeeds, allowlist enforced, nothing written). **Not verified:** the earlier "25 records → 15 unique → 15 creates, store holds 97 entities / 16 events / 153 audit rows" run left no reproducible artifact — the only store on disk (`var/walkthrough.db`) holds the 82-entity curated corpus (93 audit rows), and the committed `var/sync_report.json` records a 5-record fetch with 0 creates. Do not treat the 97-entity figure as current. **`--mark-missing` must not be scheduled**: sync fetches a single page, so a partial run would deprecate everything absent from that page.
 - **Browser walkthrough [verified]:** keyboard-only operation (skip link → task bar → buttons, 4px visible focus), SVG relationship view absent by default and `aria-hidden` when toggled with the text list as the authoritative alternative (invariant #10), task-tagged instrumentation landing in the event log, NL answers citing claims with stated uncertainty, live-synced entities searchable with verification summaries.
 
 ### 2.3 What is intentionally aspirational **[planned]**
 
 The pilot's numbers prove the **measurement apparatus**, not usability.
-Synthetic results must never be reported as human evidence (open question
-#12). The thesis-level claims — improved discovery, contextual understanding,
-trustworthy provenance — remain unproven until a human round runs.
+Outcomes are scripted per condition (baseline branches always fail), so the
+condition comparison is predetermined by the harness — it demonstrates that
+every metric is computable, nothing more. Synthetic results must never be
+reported as human evidence (open question #12). The thesis-level claims —
+improved discovery, contextual understanding, trustworthy provenance —
+remain unproven until a human round runs.
 
 ---
 
@@ -111,12 +117,10 @@ trustworthy provenance — remain unproven until a human round runs.
 1. **First human study round** — run one real participant through the protocol and fill [REPORT_TEMPLATE.md](22_MVP/validation/REPORT_TEMPLATE.md). This is the only action that can close the gate; everything else is preparation. *(Answers open questions #1–#6.)*
 2. **Event-driven work queue** — ChangeEvents already carry `required_tasks`; turn them into queued verification work with outcomes tracked in the audit log. *(Moves the feedback loop in EXECUTIVE_SUMMARY from diagram to mechanism; FR-A.)*
 3. **Drift monitoring** — track stale-claim and contradiction rates across sync cycles as an operational signal (freshness dashboard + thresholds). *(FR-A05, self-healing architecture.)*
-4. **Extend the registry allowlist** and add scheduled full syncs with `--mark-missing` so deprecation handling runs against reality, not only fixtures.
+4. **Registry sync depth** — before any allowlist extension or scheduled sync: implement multi-page fetch (cursor loop) and a partial-run guard for `--mark-missing`. Do not schedule `--mark-missing` until a run can prove it saw the full registry (sync currently fetches a single page).
 5. **Resolve the citation stubs** in `20_REFERENCES/` to DOI-level primary sources where the material allows, and record the corrections as claim revisions (history-preserving) rather than edits.
-6. **Decision at the gate** — expand, pivot to protocol/API form, or stop, per [STRATEGIC_CONCLUSION.md](01_THESIS/STRATEGIC_CONCLUSION.md); do not scale the corpus before criteria 1–6 have real evidence.
+6. **Decision at the gate** — expand, pivot to protocol/API form, or stop, per [STRATEGIC_CONCLUSION.md](01_THESIS/STRATEGIC_CONCLUSION.md) *(not in this repository)*; do not scale the corpus before criteria 1–6 have real evidence.
 
 ---
 
 *Status claims in §2.1/§2.2 are reproducible via the RUNBOOK commands; §2.3/§3 items are explicitly not verified behavior.*
-
-GRADES spec=8 design=7 correctness=7 quality=6
